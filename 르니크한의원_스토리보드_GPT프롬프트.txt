@@ -1,0 +1,69 @@
+[GLOBAL STYLE — apply to EVERY image below]
+You are generating storyboard frames for a luxury Korean skincare clinic brand film called RE;NIQUE. Generate the images below one by one, in order, as separate images. Keep the same visual style and the same female model (Korean woman, late 20s, natural minimal makeup) across all frames.
+Style: cinematic still frame, minimal, quiet, editorial mood. Warm natural light (3200–4300K), soft side light, creamy highlights, warm brown shadows, low saturation. Color palette: ivory #F9F3E9, sand stone #D5BBA4, earth brown #574438, tiny terracotta #BC4819 accent only where specified. Subtle film grain, shallow depth of field, generous negative space, 35mm/85mm cinema lens look.
+Strict rules: NO text, NO letters, NO logos, NO watermarks, NO medical devices, NO needles, NO redness or blemishes, NO before-and-after comparison.
+Frames marked 16:9 are horizontal; frames marked 9:16 are vertical.
+
+===== A. MAIN FILM (16:9) =====
+
+CUT 01 — 16:9
+Pure deep warm-black background (#27211D). In the exact center, a single small semicolon-shaped object made of glossy terracotta (#BC4819) ceramic, lit by a thin top spotlight, casting a faint soft shadow. Vast empty darkness, extremely minimal, mysterious and calm.
+
+CUT 02 — 16:9
+View through frosted textured glass: five blurred human silhouettes standing in a row, all looking alike, out of focus in muted grey-beige tones. The center figure, the Korean woman, is slightly sharper and is the only one touched by a warm golden light from the side. Rack-focus feeling, dreamy, contemplative.
+
+CUT 03 — 16:9
+Extreme macro of a thin bare tree branch by a window at early morning; a tiny fresh green bud is just opening at its tip. Soft warm sunlight through sheer linen curtains, ivory background with creamy bokeh. Empty negative space on the left third. Delicate, hopeful, quiet.
+
+CUT 04 — 16:9
+Top-down close-up of smooth grey river pebbles scattered on ivory linen. One single pebble is different: warm sand-stone color with natural layered veins, lit by a narrow beam of warm light while the others stay in gentle shade. Empty space on the right third. Minimal, tactile, serene.
+
+CUT 05 — 16:9
+Deep warm-black background with a very subtle brown gradient, a faint soft glow at the center like light gathering into one point, tiny floating dust particles catching warm light drifting toward the center. Empty, elegant background plate for a centered logo.
+
+CUT 06 — 16:9
+Close-up of ivory silk fabric gently rippling in the air, soft folds catching warm backlight, light glowing through the thin fabric. Slow-motion feeling, weightless, pure. Upper area calm and empty.
+
+CUT 07 — 16:9
+Split composition. Left half: macro of a cross-section of layered natural sedimentary stone, fine horizontal strata in sand, beige and taupe, raking side light from the left. Right half: macro of healthy smooth human skin texture with natural pores, same warm raking light from the left, same horizontal flow, matched like a match cut. Clinical yet poetic.
+
+CUT 08 — 16:9
+Side-profile silhouette of the Korean woman against a warm glowing backlight, face in shadow. A thin luminous rim of golden-orange light traces the natural contour from forehead down to the jawline and neck. Elegant, sculptural; soft cream-to-peach gradient background. Natural face shape.
+
+CUT 09 — 16:9
+Close-up of the Korean woman with eyes gently closed, face turned slightly, a soft warm light blooming across her cheek and spreading outward; skin clear, even and luminous but natural with real texture. Warm peach-to-sand gradient glow background. Calm morning-light feeling.
+
+CUT 10 — 16:9
+Wide interior of a minimal luxury clinic reception in Gangnam: ivory plaster walls, a tall arched doorway leading to a softly lit corridor, warm oak and travertine reception desk, sand-stone floor, natural daylight from a large window, one small terracotta ceramic object as an accent. Quiet, airy, architectural, no people, no signage.
+
+CUT 11 — 16:9
+Close-up at a travertine consultation table: a doctor's hands in a clean ivory coat sleeve gently turning a blank sheet of paper toward a client; the client's hands rest calmly opposite. Faces not visible. Warm window light, a ceramic tea cup in soft focus. Trustworthy, attentive.
+
+CUT 12 — 16:9
+Two Korean doctors, a man and a woman in their late 30s to 40s, standing side by side in front of ivory consultation room doors, wearing refined cream doctor coats, calm confident gentle expressions, looking at camera. Soft warm natural light, clean minimal background. Editorial portrait.
+
+CUT 13 — 16:9
+Medium close-up of the Korean woman in an ivory knit top, looking directly into the camera with a faint quiet smile, bathed in warm golden window light, soft cream glowing background. Confident, natural. Lower third empty.
+
+CUT 14 — 16:9
+Plain warm ivory (#F9F3E9) paper-like background with extremely subtle texture and a faint soft vignette of warm light from the top. Completely empty background for a centered logo.
+
+===== C. SHORT-FORM (9:16) =====
+
+REBUILD 01 — 9:16
+Vertical close-up of layered natural sedimentary stone strata filling the whole frame, horizontal bands of sand, beige and taupe, warm raking light sweeping from the top. Tactile, minimal.
+
+REBUILD 02 — 9:16
+Vertical extreme macro of healthy smooth human skin texture, fine natural pores, same warm raking light from the top, soft focus falloff at edges. Clean, honest, no makeup.
+
+REFINE 01 — 9:16
+Vertical shot of ivory silk draped on a surface, a single elegant S-curved shadow flowing diagonally from bottom-left to top-right, warm side light. Minimal, graceful.
+
+REFINE 02 — 9:16
+Vertical side-profile silhouette of the Korean woman, backlit, a thin golden rim light flowing along the jawline down the neck, warm peach-cream background. Sculptural, elegant.
+
+REVIVE 01 — 9:16
+Vertical close-up of a clear glass of water on ivory linen, warm sunlight refracting through it and blooming into a soft glowing orb of golden light on the surface. Dreamy, luminous.
+
+REVIVE 02 — 9:16
+Vertical close-up of the Korean woman's face, eyes closed, warm soft light spreading across her cheek, clear even luminous skin with natural texture, peach-sand gradient background. Serene.
