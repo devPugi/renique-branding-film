@@ -4,112 +4,125 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>르니크 브랜딩영상 스토리보드</title>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Noto+Sans+KR:wght@300;400;500;700&family=Noto+Serif+KR:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="https://hangeul.pstatic.net/hangeul_static/css/maru-buri.css">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Noto+Serif+KR:wght@400;600&display=swap" rel="stylesheet">
 <style>
+/* RE;NIQUE Brand Guideline v1.1 토큰 */
 :root{
-  --ivory:#f9f3e9; --paper:#f4ebde; --sand:#efe3d3; --line:#ded2c8; --line2:#d3c4b9;
-  --taupe:#8d7564; --brown:#574438; --ink:#27211d; --accent:#bc4819; --accent-soft:#f47738;
-  --serif-en:'Cormorant Garamond',Georgia,serif; --serif-kr:'Noto Serif KR',serif; --sans:'Noto Sans KR',sans-serif;
+  --cream:#F5EBE0; --sand:#F0DBC8; --warmgray:#D9CFC4; --line:#E6DACB;
+  --ink:#14232B; --ink2:#1E3038; --txt:#34464E; --slate:#5C6B72; --muted-lt:#A9B4B9;
+  --orange:#E86E26; --peach:#F3A066; --amber:#B8521E;
+  --sans:'Pretendard Variable',Pretendard,-apple-system,'Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',sans-serif;
+  --serif-en:'Cormorant Garamond',Georgia,serif;
+  --serif-kr:'MaruBuri','Noto Serif KR',serif;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{background:var(--ivory);color:var(--ink);font-family:var(--sans);font-weight:300;line-height:1.7;font-size:14px;-webkit-font-smoothing:antialiased}
+body{background:var(--cream);color:var(--ink);font-family:var(--sans);font-weight:400;line-height:1.7;font-size:14px;-webkit-font-smoothing:antialiased;word-break:keep-all;overflow-wrap:break-word}
 .wrap{max-width:1200px;margin:0 auto;padding:0 40px}
 @media(max-width:720px){.wrap{padding:0 16px}}
 
-header.top{padding:56px 0 40px;border-bottom:1px solid var(--line);background:linear-gradient(180deg,var(--ivory),var(--sand))}
-header .meta{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;font-size:12px;letter-spacing:.18em;color:var(--taupe);text-transform:uppercase}
-header h1{font-family:var(--serif-en);font-weight:400;font-size:clamp(48px,8vw,96px);letter-spacing:.04em;line-height:1.05;margin-top:28px}
-header h1 span{color:var(--accent)}
-header .doc{font-family:var(--serif-kr);font-size:clamp(20px,2.6vw,28px);margin-top:8px}
-header .spec{display:flex;gap:36px;flex-wrap:wrap;margin-top:32px;font-size:13px;color:var(--brown)}
-header .spec b{display:block;font-size:11px;letter-spacing:.16em;color:var(--taupe);font-weight:500}
+header.top{padding:56px 0 40px;border-bottom:1px solid var(--line);background:var(--cream)}
+header .meta{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;font-size:12px;letter-spacing:.18em;color:var(--slate);text-transform:uppercase}
+header .logo{display:block;width:clamp(240px,40vw,460px);height:auto;margin-top:32px}
+header .doc{font-family:var(--serif-kr);font-size:clamp(20px,2.6vw,28px);margin-top:24px}
+header .spec{display:flex;gap:36px;flex-wrap:wrap;margin-top:32px;font-size:13px;color:var(--txt)}
+header .spec b{display:block;font-size:11px;letter-spacing:.16em;color:var(--orange);font-weight:700}
 
-nav.tabs{position:sticky;top:0;z-index:5;background:rgba(249,243,233,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav.tabs{position:sticky;top:0;z-index:5;background:rgba(245,235,224,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 nav.tabs .wrap{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
-nav.tabs a{flex:none;padding:14px 12px;font-size:12px;letter-spacing:.06em;color:var(--brown);text-decoration:none;white-space:nowrap}
-nav.tabs a:hover{color:var(--accent)}
+nav.tabs a{flex:none;padding:14px 12px;font-size:12px;letter-spacing:.04em;color:var(--txt);text-decoration:none;white-space:nowrap}
+nav.tabs a:hover{color:var(--orange)}
 
 section{padding:72px 0;border-bottom:1px solid var(--line)}
-.eyebrow{font-family:var(--serif-en);font-size:15px;letter-spacing:.2em;color:var(--accent);text-transform:uppercase}
-h2{font-family:var(--serif-kr);font-weight:400;font-size:clamp(24px,3vw,32px);margin:6px 0 12px}
-.desc{color:var(--brown);max-width:780px;margin-bottom:36px;font-size:15px}
+.eyebrow{font-size:11px;font-weight:700;letter-spacing:.24em;color:var(--orange);text-transform:uppercase}
+h2{font-family:var(--serif-kr);font-weight:400;font-size:clamp(24px,3vw,32px);margin:10px 0 12px;line-height:1.4}
+.desc{color:var(--txt);max-width:780px;margin-bottom:20px;font-size:15px}
+.notice{max-width:780px;margin-bottom:36px;background:#fff;border-left:2px solid var(--orange);padding:12px 16px;font-size:13px;color:var(--txt)}
+.notice b{color:var(--ink);font-weight:600}
 
 /* overview strip */
 .strip{display:grid;grid-template-columns:repeat(14,1fr);gap:4px;margin-bottom:8px}
-.strip a{display:block;text-decoration:none;color:var(--taupe);font-size:10px;text-align:center}
-.strip svg{display:block;width:100%;height:auto;border:1px solid var(--line)}
-.strip a:hover svg{outline:2px solid var(--accent)}
+.strip a{display:block;text-decoration:none;color:var(--slate);font-size:10px;text-align:center}
 @media(max-width:900px){.strip{grid-template-columns:repeat(7,1fr)}}
 .seqbar{display:flex;font-size:11px;color:#fff;margin-bottom:48px}
 .seqbar div{padding:6px 8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 @media(max-width:900px){.seqbar{display:none}}
 
-.seq-title{display:flex;align-items:baseline;gap:14px;margin:48px 0 16px;padding-bottom:10px;border-bottom:1px solid var(--brown)}
+.seq-title{display:flex;align-items:baseline;gap:14px;margin:48px 0 16px;padding-bottom:10px;border-bottom:1px solid var(--ink)}
 .seq-title:first-of-type{margin-top:0}
-.seq-title .n{font-family:var(--serif-en);font-size:28px;color:var(--accent)}
-.seq-title h3{font-family:var(--serif-kr);font-weight:500;font-size:19px}
-.seq-title .tc{margin-left:auto;font-family:var(--serif-en);font-size:15px;color:var(--taupe)}
+.seq-title .n{font-family:var(--serif-en);font-size:28px;font-weight:600;color:var(--orange)}
+.seq-title h3{font-family:var(--serif-kr);font-weight:600;font-size:19px}
+.seq-title .tc{margin-left:auto;font-family:var(--serif-en);font-size:15px;color:var(--slate)}
 
 /* scene */
-.scene{display:grid;grid-template-columns:minmax(0,420px) 1fr;gap:28px;padding:24px 0;border-bottom:1px dashed var(--line2)}
+.scene{display:grid;grid-template-columns:minmax(0,420px) 1fr;gap:28px;padding:24px 0;border-bottom:1px dashed var(--warmgray)}
 .scene:last-child{border-bottom:0}
 @media(max-width:820px){.scene{grid-template-columns:1fr}}
 .frame{position:relative}
-.frame svg{display:block;width:100%;height:auto;border:1px solid var(--line2);background:#fff}
-.frame .cut{position:absolute;top:8px;left:8px;background:rgba(39,33,29,.85);color:var(--ivory);font-family:var(--serif-en);font-size:13px;letter-spacing:.08em;padding:2px 9px}
-.frame .dur{position:absolute;top:8px;right:8px;background:var(--accent);color:#fff;font-size:11px;padding:2px 8px;font-weight:500}
-.ph{position:relative;aspect-ratio:16/9;overflow:hidden;border:1px solid var(--line2);background:var(--ink)}
-.ph img{display:block;width:100%;height:100%;object-fit:cover}
+.frame .cut{position:absolute;top:8px;left:8px;z-index:2;background:rgba(20,35,43,.85);color:var(--cream);font-family:var(--serif-en);font-size:13px;letter-spacing:.08em;padding:2px 9px}
+.frame .dur{position:absolute;top:8px;right:8px;z-index:2;background:var(--ink);color:#fff;font-size:11px;padding:2px 8px;font-weight:600}
+.frame .shot{display:flex;justify-content:space-between;font-size:12px;color:var(--slate);margin-top:6px}
+.info{display:grid;grid-template-columns:88px 1fr;align-content:start;font-size:14px}
+.info dt{font-size:11px;letter-spacing:.12em;color:var(--slate);font-weight:600;padding:9px 0;border-top:1px solid var(--line)}
+.info dd{padding:8px 0;border-top:1px solid var(--line);color:var(--ink)}
+.info dt:first-of-type,.info dd:first-of-type{border-top:0}
+.info dd.na{font-family:var(--serif-kr);font-size:15px;color:var(--txt)}
+.info dd.na::before{content:"NA  ";font-family:var(--sans);font-size:10px;color:var(--orange);letter-spacing:.1em;font-weight:700}
+.info dd.sub{font-family:var(--serif-kr);font-size:15px}
+.info dd .note{display:block;font-size:12px;color:var(--amber);margin-top:4px}
+.empty{color:var(--warmgray)}
+
+/* photo frame + overlay */
+.ph{position:relative;aspect-ratio:16/9;overflow:hidden;border:1px solid var(--warmgray);background:var(--ink)}
+.ph img.bg{display:block;width:100%;height:100%;object-fit:cover}
+.ph.field{background:var(--orange);border-color:var(--orange);display:flex;flex-direction:column;align-items:center;justify-content:center}
+.ph.field img{width:46%;height:auto}
+.ph.field .lock{font-family:var(--sans);font-weight:600;letter-spacing:.3em;padding-left:.3em;color:#fff;font-size:clamp(7px,1.05vw,13px);margin-top:4.5%}
+.strip .ph.field .lock{display:none}
 .ov{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:0 7%;pointer-events:none;color:var(--ink)}
-.ov .en{font-family:var(--serif-en);font-size:clamp(16px,2.4vw,28px);letter-spacing:.12em;line-height:1.1}
+.ov .en{font-family:var(--serif-en);font-weight:500;font-size:clamp(16px,2.4vw,28px);letter-spacing:.12em;line-height:1.1}
 .ov .kr{font-family:var(--serif-kr);font-size:clamp(9px,1vw,12px);margin-top:4px}
 .ov.l{align-items:flex-start;text-align:left}.ov.r{align-items:flex-end;text-align:right}.ov.c{align-items:center;text-align:center}
 .ov.b{justify-content:flex-end;padding-bottom:6%}.ov.t{justify-content:flex-start;padding-top:6%}
-.ov.light{color:var(--ivory);text-shadow:0 1px 8px rgba(0,0,0,.35)}
-.ov .semi{color:var(--accent-soft)}
-.ov .big{font-size:clamp(24px,3.6vw,42px)}
-.ov .ch{font-family:var(--serif-kr);color:var(--accent);font-size:clamp(18px,2.4vw,30px);line-height:1}
+.ov.light{color:var(--cream);text-shadow:0 1px 8px rgba(0,0,0,.35)}
+.ov em{font-style:normal;color:var(--orange)}
+.ov img.sig{width:44%;height:auto}
+.ov .ch{font-family:var(--serif-kr);color:var(--orange);font-size:clamp(18px,2.4vw,30px);line-height:1.1}
 .strip .ph{border:1px solid var(--line)}
-.strip a:hover .ph{outline:2px solid var(--accent)}
-.frame .shot{display:flex;justify-content:space-between;font-size:12px;color:var(--taupe);margin-top:6px}
-.info{display:grid;grid-template-columns:88px 1fr;align-content:start;font-size:14px}
-.info dt{font-size:11px;letter-spacing:.12em;color:var(--taupe);font-weight:500;padding:9px 0;border-top:1px solid var(--line)}
-.info dd{padding:8px 0;border-top:1px solid var(--line);color:var(--ink)}
-.info dt:first-of-type,.info dd:first-of-type{border-top:0}
-.info dd.na{font-family:var(--serif-kr);font-size:15px;color:var(--brown)}
-.info dd.na::before{content:"NA  ";font-family:var(--sans);font-size:10px;color:var(--accent);letter-spacing:.1em;font-weight:500}
-.info dd.sub{font-family:var(--serif-en);font-size:16px}
-.info dd .note{display:block;font-size:12px;color:var(--accent);margin-top:4px}
-.empty{color:var(--line2)}
+.strip a:hover .ph{outline:2px solid var(--orange)}
 
 /* shorts */
 .shorts{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
 @media(max-width:900px){.shorts{grid-template-columns:1fr}}
-.short{background:#fffaf3;border:1px solid var(--line);padding:22px}
+.short{background:#fff;border:1px solid var(--line);padding:22px}
 .short h3{font-family:var(--serif-en);font-weight:500;font-size:22px;letter-spacing:.06em}
-.short h3 span{font-family:var(--serif-kr);color:var(--accent);margin-left:6px}
-.short .q{font-family:var(--serif-kr);color:var(--brown);font-size:13px;margin-bottom:16px}
+.short h3 span{font-family:var(--serif-kr);color:var(--orange);margin-left:6px}
+.short .q{font-family:var(--serif-kr);color:var(--txt);font-size:13px;margin-bottom:16px}
 .vgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
-.vgrid figure{font-size:11px;color:var(--brown);line-height:1.5}
-.vgrid svg{display:block;width:100%;height:auto;border:1px solid var(--line2);margin-bottom:6px}
-.vgrid figcaption b{display:block;font-family:var(--serif-en);color:var(--accent);font-weight:500;font-size:12px}
-.short .meta2{margin-top:16px;font-size:12px;color:var(--taupe);border-top:1px solid var(--line);padding-top:10px}
+.vgrid figure{font-size:11px;color:var(--txt);line-height:1.5}
+.vgrid svg{display:block;width:100%;height:auto;border:1px solid var(--warmgray);margin-bottom:6px}
+.vgrid figcaption b{display:block;font-family:var(--serif-en);color:var(--orange);font-weight:600;font-size:12px}
+.short .meta2{margin-top:16px;font-size:12px;color:var(--slate);border-top:1px solid var(--line);padding-top:10px}
 
 /* misc tables */
 .tbl{width:100%;border-collapse:collapse;font-size:13px}
-.tbl th,.tbl td{text-align:left;padding:12px 10px;border-bottom:1px solid var(--line);vertical-align:top}
-.tbl th{font-size:11px;letter-spacing:.12em;color:var(--taupe);font-weight:500;border-bottom:1px solid var(--brown)}
+.tbl th,.tbl td{text-align:left;padding:12px 10px;border-bottom:1px solid var(--line);vertical-align:top;color:var(--txt)}
+.tbl th{font-size:11px;letter-spacing:.12em;color:var(--slate);font-weight:600;border-bottom:1px solid var(--ink)}
+.tbl td b{color:var(--ink)}
 .scroll{overflow-x:auto}
 .cols{display:grid;grid-template-columns:1fr 1fr;gap:28px}
 @media(max-width:820px){.cols{grid-template-columns:1fr}}
-.box{background:#fffaf3;border:1px solid var(--line);padding:24px}
-.box h3{font-family:var(--serif-kr);font-weight:500;font-size:17px;margin-bottom:10px}
-.box ul{padding-left:18px} .box li{padding:3px 0}
+.box{background:#fff;border:1px solid var(--line);padding:24px}
+.box h3{font-family:var(--serif-kr);font-weight:600;font-size:17px;margin-bottom:10px}
+.box ul{padding-left:18px;color:var(--txt)} .box li{padding:3px 0} .box li b{color:var(--ink)}
 
-footer{padding:48px 0;text-align:center;font-family:var(--serif-en);letter-spacing:.2em;color:var(--taupe);font-size:14px}
-footer span{color:var(--accent)}
+footer{padding:48px 0;text-align:center;color:var(--slate);font-size:13px;letter-spacing:.06em}
+footer img{display:block;width:150px;height:auto;margin:0 auto 12px}
+
 /* mobile */
 @media(max-width:600px){
   header.top{padding:36px 0 32px}
@@ -127,7 +140,7 @@ footer span{color:var(--accent)}
   .tbl tr{padding:16px 0;border-bottom:1px solid var(--line)}
   .tbl td{border:0;padding:3px 0}
   .tbl td:first-child{padding-bottom:8px}
-  .tbl td[data-label]:not(:first-child)::before{content:attr(data-label);display:block;font-size:11px;letter-spacing:.08em;color:var(--taupe);font-weight:500}
+  .tbl td[data-label]:not(:first-child)::before{content:attr(data-label);display:block;font-size:11px;letter-spacing:.08em;color:var(--slate);font-weight:600}
   .box{padding:20px 16px}
 }
 @media print{nav.tabs{display:none}.scene{break-inside:avoid}body{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
@@ -136,9 +149,9 @@ footer span{color:var(--accent)}
 <body>
 
 <header class="top"><div class="wrap">
-  <div class="meta"><span>Branding Film · Storyboard</span><span>Ver. 1.0 · 2026.11.10</span></div>
-  <h1>RE<span>;</span>NIQUE</h1>
-  <div class="doc">르니크한의원 브랜딩 영상 스토리보드</div>
+  <div class="meta"><span>Branding Film · Storyboard</span><span>Ver. 1.1 · 2026.11.11 · 브랜드 가이드북 v1.1 반영</span></div>
+  <img class="logo" src="assets/logo/renique_signature_ink.png" alt="RE;NIQUE CLINIC" width="1400" height="371">
+  <div class="doc">르니크 브랜딩 영상 스토리보드</div>
   <div class="spec">
     <div><b>MAIN FILM</b>60″ · 16:9 · 14 Cuts</div>
     <div><b>SHORT FORM</b>15″ × 3 · 9:16</div>
@@ -154,10 +167,11 @@ footer span{color:var(--accent)}
 <section id="main"><div class="wrap">
   <div class="eyebrow">A · Main Brand Film</div>
   <h2>메인 브랜드 필름 — 60″</h2>
-  <p class="desc">세미콜론(;)으로 시작해 세미콜론으로 끝나는 구조입니다. 전반부에서 ‘르니크’라는 이름과 발음을 각인시키고, 중반부 결·선·톤 3챕터에서 브랜드 철학을 보여 준 뒤 공간과 의료진의 신뢰감으로 마무리합니다. 아래 프레임은 구도와 무드를 확인하기 위한 AI 생성 레퍼런스 이미지이며, 실제 촬영본이 아닙니다. 자막·로고는 이미지 위에 별도로 얹었습니다.</p>
+  <p class="desc">“달라지고 싶지만, 다른 사람이 되고 싶지는 않습니다.”라는 고객의 마음에서 시작합니다. 전반부에서 ‘르니크’라는 이름과 발음을 각인시키고, 중반부 결·선·톤 3챕터에서 브랜드 철학을 보여 준 뒤, 공간과 의료진의 신뢰감과 가이드북 기본형 엔드 카드로 마무리합니다.</p>
+  <div class="notice"><b>레퍼런스 이미지 안내</b> · 프레임은 구도와 무드를 확인하기 위한 AI 생성 이미지이며 실제 촬영본이 아닙니다. 가이드북 반영 전에 생성되어 갈색·금색 톤이 강하므로, 실제 촬영·그레이딩은 <b>크림 하이라이트 · 잉크 섀도 · 피치/오렌지 포인트</b> 기준으로 진행합니다. 자막·로고는 이미지 위에 별도로 얹었고, 로고는 원본 벡터를 사용했습니다.</div>
   <div class="strip" id="strip"></div>
   <div class="seqbar">
-    <div style="width:13.3%;background:#27211d">Opening</div><div style="width:23.3%;background:#574438">Name</div><div style="width:6.7%;background:#8d7564">Phil.</div><div style="width:30%;background:#bc4819">3 Directions · 결 선 톤</div><div style="width:16.7%;background:#b39880">Clinic</div><div style="width:10%;background:#27211d">Ending</div>
+    <div style="width:13.3%;background:#14232B">Opening</div><div style="width:23.3%;background:#5C6B72">Name</div><div style="width:6.7%;background:#D9CFC4;color:#14232B">Phil.</div><div style="width:30%;background:#E86E26">3 Directions · 결 선 톤</div><div style="width:16.7%;background:#F3A066;color:#14232B">Clinic</div><div style="width:10%;background:#14232B">Ending</div>
   </div>
   <div id="scenes"></div>
 </div></section>
@@ -165,7 +179,7 @@ footer span{color:var(--accent)}
 <section id="shorts"><div class="wrap">
   <div class="eyebrow">C · Category Short-form</div>
   <h2>카테고리 숏폼 — 15″ × 3 (9:16)</h2>
-  <p class="desc">메인 필름과 같은 촬영 소스로 만듭니다. 챕터마다 ‘오브제 → 피부 → 카피 → 로고’ 4컷 구조로 통일해 시리즈로 인식되게 합니다. 영상 안에서는 시술명만 소개하고, 기기명·가격은 캡션과 홈페이지에서 안내합니다.</p>
+  <p class="desc">메인 필름과 같은 촬영 소스로 만듭니다. 챕터마다 ‘오브제 → 피부 → 카피 → 엔드 카드’ 4컷 구조로 통일해 시리즈로 인식되게 합니다. 영상 안에서는 시술명만 소개하고, 가이드북의 ‘정교함’ 원칙에 따라 기기·샷 수·회복 기간은 캡션과 홈페이지에서 명확하게 안내합니다.</p>
   <div class="shorts" id="shortsGrid"></div>
 </div></section>
 
@@ -175,9 +189,9 @@ footer span{color:var(--accent)}
   <div class="scroll"><table class="tbl">
     <thead><tr><th>버전</th><th>사용 컷</th><th>내레이션 · 카피</th><th>비고</th></tr></thead>
     <tbody>
-      <tr><td><b>B. 30″ 컷다운</b><br>16:9 · 1:1</td><td>#01 → #03 → #04 → #05 → #07 → #08 → #09 → #13 → #14</td><td>“르누보, 다시 찾아오는 봄. 위니크, 단 하나뿐인 고유함. 르니크.” → “결을 세우고, 선을 다듬고, 빛을 깨웁니다.” → “다시, 나다운 특별함으로.”</td><td>개원 티저·광고용. 엔딩에 개원일 표기</td></tr>
+      <tr><td><b>B. 30″ 컷다운</b><br>16:9 · 1:1</td><td>#01 → #03 → #04 → #05 → #07 → #08 → #09 → #13 → 개원 안내 카드 → #14</td><td>“르누보, 다시 찾아오는 봄. 위니크, 단 하나뿐인 고유함. 르니크.” → “결을 세우고, 선을 다듬고, 빛을 깨웁니다.” → “다시, 나다운 특별함으로.”</td><td>개원 티저·광고용. 개원 안내(강남 · 2027. 01 OPEN)는 엔드 카드 앞 크림 카드 1초로 분리 — 오렌지 면 안에는 로고 외 요소를 넣지 않음</td></tr>
       <tr><td><b>E. 홈페이지 루프</b><br>20″ · 무음</td><td>#06 → #07 → #08 → #09 → #10 → (#06으로 연결)</td><td>자막 없음. 홈페이지 히어로 카피를 HTML 텍스트로 얹음</td><td>첫 프레임과 마지막 프레임 톤을 맞춰 끊김 없이 루프</td></tr>
-      <tr><td><b>F. 로고 범퍼</b><br>6″</td><td>#01 세미콜론 드로잉 → #14 로고</td><td>사운드 로고(피아노 단음 + 잔향)</td><td>모든 콘텐츠의 인트로·아웃트로로 공용</td></tr>
+      <tr><td><b>F. 로고 범퍼</b><br>6″</td><td>#01 세미콜론 마크 → #14 엔드 카드</td><td>사운드 로고(피아노 단음 + 잔향)</td><td>모든 콘텐츠의 인트로·아웃트로로 공용. 지점이 늘어도 같은 템플릿 사용</td></tr>
     </tbody>
   </table></div>
 </div></section>
@@ -189,99 +203,90 @@ footer span{color:var(--accent)}
     <div class="box"><h3>촬영</h3><ul>
       <li>모든 컷은 9:16 세이프 영역(중앙 56%)을 함께 고려해 프레이밍</li>
       <li>#07 · #08 · #09 오브제 컷과 피부 컷은 <b>같은 구도·같은 광원 방향</b>으로 촬영해 매치컷이 자연스럽게 이어지도록</li>
+      <li>미술·소품은 크림·샌드·잉크 위주로 구성하고 <b>갈색·녹색·금색 소품 지양</b></li>
       <li>기기 촬영 시 로고·모델명이 보이지 않도록 앵글 조정 또는 테이핑</li>
       <li>상담 장면 출연자는 모델이며, 실제 환자 촬영은 하지 않음</li>
       <li>원장님 컷은 시술명 없이 철학·태도 중심 (퍼스널 분야 미확정 반영)</li>
     </ul></div>
-    <div class="box"><h3>후반</h3><ul>
-      <li>컬러: 크림 하이라이트, 섀도는 따뜻한 브라운(#27211D 계열). 채도는 낮게</li>
-      <li>자막: 영문 Cormorant Garamond, 국문 Noto Serif KR, 아이보리 단색, 페이드만 사용</li>
-      <li>세미콜론(;)만 테라코타(#BC4819) 포인트 컬러로 표시</li>
-      <li>엔딩 카드에 의료기관 명칭 ‘르니크한의원’ 필수 노출</li>
+    <div class="box"><h3>후반 · 가이드북 규정</h3><ul>
+      <li>컬러: 크림 하이라이트, 섀도는 잉크(#14232B) 방향, 채도는 낮게. 오렌지(#E86E26)는 엔드 카드 면·강조에만</li>
+      <li>자막: 영문 Cormorant Garamond, 국문 마루 부리, 정보 자막 Pretendard. 크림·화이트 단색, 페이드만 사용</li>
+      <li>로고: 원본 벡터만 사용, <b>한 색</b>으로 표기(세미콜론 색 분리 금지), 그림자·광택·재조판 금지, 보호 영역 1X</li>
+      <li>엔드 카드: 오렌지 면 + 화이트 시그니처 + 법정 명칭 ‘르니크한의원’(Pretendard SemiBold, 자간 +0.3em, 로고 하단 0.5X)</li>
+      <li>자막·내레이션에서는 ‘르니크’로 통일, ‘한의원’ 단독 언급 없음</li>
       <li>공개 전 의료광고 사전심의 대상 여부 확인 및 표현 검수</li>
     </ul></div>
   </div>
 </div></section>
 
-<footer>RE<span>;</span>NIQUE CLINIC · 르니크한의원 · Storyboard</footer>
+<footer>
+  <img src="assets/logo/renique_signature_ink.png" alt="RE;NIQUE CLINIC" width="1400" height="371">
+  르니크 강남 · Storyboard · Brand Guideline v1.1 적용
+</footer>
 
 <script>
-// ---------- frame drawing helpers (viewBox 160x90 / vertical 90x160) ----------
-const C={iv:'#f9f3e9',sand:'#efe3d3',st:'#d5bba4',st2:'#c6b9ae',tp:'#8d7564',br:'#574438',ink:'#27211d',ac:'#bc4819',acs:'#f47738',glow:'#f9d9b8'};
-const font=(s,x,y,o={})=>`<text x="${x}" y="${y}" text-anchor="${o.a||'middle'}" font-family="${o.kr?"Noto Serif KR,serif":"Cormorant Garamond,Georgia,serif"}" font-size="${s}" fill="${o.c||C.ink}" letter-spacing="${o.ls||0}" ${o.it?'font-style="italic"':''}>${o.t}</text>`;
-const face=(cx,cy,r,fill,stroke)=>`<ellipse cx="${cx}" cy="${cy}" rx="${r*.78}" ry="${r}" fill="${fill}" ${stroke?`stroke="${stroke}" stroke-width=".6"`:''}/><path d="M${cx-r*.3} ${cy+r*.9} L${cx-r*.32} ${cy+r*1.35} Q${cx-r*1.6} ${cy+r*1.6} ${cx-r*2} ${cy+r*2.6} L${cx+r*2} ${cy+r*2.6} Q${cx+r*1.6} ${cy+r*1.6} ${cx+r*.32} ${cy+r*1.35} L${cx+r*.3} ${cy+r*.9}Z" fill="${fill}" ${stroke?`stroke="${stroke}" stroke-width=".6"`:''}/>`;
-const svg=(inner,bg,v)=>`<svg viewBox="0 0 ${v?'90 160':'160 90'}" xmlns="http://www.w3.org/2000/svg"><defs>
-<radialGradient id="g1" cx=".62" cy=".55" r=".6"><stop offset="0" stop-color="${C.glow}"/><stop offset=".35" stop-color="#efc39b" stop-opacity=".7"/><stop offset="1" stop-color="${C.sand}" stop-opacity="0"/></radialGradient>
-<linearGradient id="g2" x1="0" x2="1"><stop offset="0" stop-color="#fff5e6"/><stop offset="1" stop-color="${C.sand}"/></linearGradient>
+const LOGO_INK='assets/logo/renique_signature_ink.png';
+const LOGO_WHITE='assets/logo/renique_signature_white.png';
+
+// ---------- 숏폼 프레임 드로잉 (가이드북 팔레트) ----------
+const C={cream:'#F5EBE0',sand:'#F0DBC8',wg:'#D9CFC4',line:'#E6DACB',ink:'#14232B',txt:'#34464E',sl:'#5C6B72',or:'#E86E26',pe:'#F3A066',am:'#B8521E',skin:'#E9C9AE'};
+const font=(s,x,y,o={})=>`<text x="${x}" y="${y}" text-anchor="${o.a||'middle'}" font-family="${o.kr?"MaruBuri,Noto Serif KR,serif":o.sans?"Pretendard Variable,Pretendard,sans-serif":"Cormorant Garamond,Georgia,serif"}" font-size="${s}" fill="${o.c||C.ink}" letter-spacing="${o.ls||0}" ${o.w?`font-weight="${o.w}"`:''}>${o.t}</text>`;
+const face=(cx,cy,r,fill)=>`<ellipse cx="${cx}" cy="${cy}" rx="${r*.78}" ry="${r}" fill="${fill}"/><path d="M${cx-r*.3} ${cy+r*.9} L${cx-r*.32} ${cy+r*1.35} Q${cx-r*1.6} ${cy+r*1.6} ${cx-r*2} ${cy+r*2.6} L${cx+r*2} ${cy+r*2.6} Q${cx+r*1.6} ${cy+r*1.6} ${cx+r*.32} ${cy+r*1.35} L${cx+r*.3} ${cy+r*.9}Z" fill="${fill}"/>`;
+const svg=(inner,bg)=>`<svg viewBox="0 0 90 160" xmlns="http://www.w3.org/2000/svg"><defs>
+<radialGradient id="g1" cx=".62" cy=".55" r=".6"><stop offset="0" stop-color="#fff"/><stop offset=".35" stop-color="${C.pe}" stop-opacity=".75"/><stop offset="1" stop-color="${C.sand}" stop-opacity="0"/></radialGradient>
 <filter id="bl"><feGaussianBlur stdDeviation="1.6"/></filter></defs>
 <rect width="100%" height="100%" fill="${bg}"/>${inner}</svg>`;
-const strata=(w,h,n)=>{let s='';const cols=[C.st,C.st2,'#e9d6c6',C.line2||'#d3c4b9','#ded2c8'];for(let i=0;i<n;i++){const y=h/n*i;s+=`<path d="M0 ${y+3} Q${w*.3} ${y-2} ${w*.55} ${y+2} T${w} ${y+1} V${y+h/n+3} H0Z" fill="${cols[i%5]}"/>`;}return s;};
+const strata=(w,h,n)=>{let s='';const cols=[C.sand,C.wg,C.cream,C.line,'#E3D3C2'];for(let i=0;i<n;i++){const y=h/n*i;s+=`<path d="M0 ${y+3} Q${w*.3} ${y-2} ${w*.55} ${y+2} T${w} ${y+1} V${y+h/n+3} H0Z" fill="${cols[i%5]}"/>`;}return s;};
 
-const F={
- f1:()=>svg(`${font(46,80,62,{t:';',c:C.ac})}<line x1="58" y1="74" x2="102" y2="74" stroke="${C.br}" stroke-width=".4" stroke-dasharray="1 2"/>`,C.ink),
- f2:()=>svg(`<g filter="url(#bl)" opacity=".55">${[22,50,78,106,134].map(x=>face(x,34,9,C.st2)).join('')}</g>${face(80,34,9,C.st,C.ac)}`,C.iv),
- f3:()=>svg(`<path d="M10 82 Q60 60 92 40 T150 14" stroke="${C.br}" stroke-width="1.2" fill="none"/><path d="M92 40 q6 -10 14 -10 q-4 8 -14 10Z M70 52 q2 -10 10 -14 q0 9 -10 14Z M118 26 q8 -6 16 -2 q-8 6 -16 2Z" fill="#a9b48c"/><circle cx="134" cy="20" r="2.4" fill="${C.acs}" opacity=".8"/>${font(13,22,24,{t:'RENOUVEAU',a:'start',ls:2})}${font(6,22,33,{t:'[르누보] 다시 찾아오는 봄',a:'start',kr:1,c:C.br})}`,'url(#g2)'),
- f4:()=>svg(`${[[30,64,9,6],[52,70,8,5],[110,68,10,6],[132,62,8,5],[90,74,7,4]].map(([x,y,a,b])=>`<ellipse cx="${x}" cy="${y}" rx="${a}" ry="${b}" fill="${C.st2}"/>`).join('')}<ellipse cx="78" cy="56" rx="12" ry="8" fill="${C.st}" stroke="${C.ac}" stroke-width=".7"/><ellipse cx="78" cy="53" rx="6" ry="2" fill="#fff" opacity=".35"/>${font(13,138,24,{t:'UNIQUE',a:'end',ls:2})}${font(6,138,33,{t:'[위니크] 세상에 단 하나뿐인 고유함',a:'end',kr:1,c:C.br})}`,C.iv),
- f5:()=>svg(`${font(24,80,50,{t:'RE<tspan fill="'+C.acs+'">;</tspan>NIQUE',c:C.iv,ls:2})}${font(7,80,64,{t:'르 니 크',kr:1,c:C.st,ls:3})}<path d="M18 50 h22 M120 50 h22" stroke="${C.tp}" stroke-width=".4"/><path d="M36 47 l4 3 -4 3 M124 47 l-4 3 4 3" stroke="${C.tp}" stroke-width=".4" fill="none"/>`,C.ink),
- f6:()=>svg(`${[0,1,2,3,4].map(i=>`<path d="M-5 ${30+i*12} C40 ${18+i*12} 70 ${46+i*12} 110 ${30+i*12} S150 ${22+i*12} 170 ${28+i*12}" stroke="${['#fff',C.st,'#fff',C.st2,'#fff'][i]}" stroke-width="${i%2?1:5}" fill="none" opacity=".8"/>`).join('')}<rect width="160" height="90" fill="url(#g1)" opacity=".5"/>${font(6.5,80,18,{t:'아름다움은, 무언가를 더하는 데서만 완성되지 않습니다.',kr:1,c:C.br})}`,C.sand),
- f7:()=>svg(`<g clip-path="inset(0)"><svg width="80" height="90">${strata(80,90,9)}</svg></g><rect x="80" width="80" height="90" fill="#ead2bf"/>${[...Array(40)].map((_,i)=>`<circle cx="${84+(i*37)%74}" cy="${4+(i*53)%84}" r=".5" fill="${C.tp}" opacity=".5"/>`).join('')}<line x1="80" y1="0" x2="80" y2="90" stroke="#fff" stroke-dasharray="2 2"/>${font(9,8,82,{t:'I. REBUILD',a:'start',c:C.ink,ls:1})}${font(12,150,22,{t:'결',kr:1,a:'end',c:C.ac})}`,C.iv),
- f8:()=>svg(`<rect width="160" height="90" fill="url(#g1)" opacity=".8"/><path d="M96 10 C88 20 86 28 90 36 C92 40 88 44 90 48 C86 54 90 58 94 62 C98 70 108 74 118 72 C124 82 126 90 126 90 H160 V0 H100Z" fill="${C.br}"/><path d="M90 48 C86 54 90 58 94 62 C98 70 108 74 118 72" stroke="${C.acs}" stroke-width="1" fill="none"/>${font(9,10,82,{t:'II. REFINE',a:'start',ls:1})}${font(12,22,22,{t:'선',kr:1,c:C.ac})}`,C.sand),
- f9:()=>svg(`<rect width="160" height="90" fill="url(#g1)"/>${face(64,36,15,'#d9b597')}<ellipse cx="72" cy="40" rx="8" ry="5" fill="#fff" opacity=".4" filter="url(#bl)"/>${font(9,150,82,{t:'III. REVIVE',a:'end',ls:1})}${font(12,140,22,{t:'톤',kr:1,c:C.ac})}`,C.sand),
- f10:()=>svg(`<rect x="0" y="66" width="160" height="24" fill="${C.st2}" opacity=".5"/><path d="M58 66 V30 a22 22 0 0 1 44 0 V66Z" fill="#fff8ee" stroke="${C.st}" stroke-width=".8"/><rect x="110" y="48" width="34" height="18" fill="${C.st}"/><rect x="16" y="20" width="22" height="46" fill="${C.sand}" stroke="${C.st}" stroke-width=".5"/><circle cx="80" cy="44" r="3" fill="${C.ac}" opacity=".8"/>`,C.iv),
- f11:()=>svg(`<rect x="0" y="56" width="160" height="34" fill="${C.st}"/><path d="M20 56 q14 -8 32 -2 l10 6 h-38Z M140 56 q-14 -8 -32 -2 l-10 6 h38Z" fill="#e8cdb6"/><rect x="66" y="48" width="28" height="18" rx="1" fill="#fff" stroke="${C.st2}"/><line x1="70" y1="54" x2="90" y2="54" stroke="${C.st2}"/><line x1="70" y1="58" x2="86" y2="58" stroke="${C.st2}"/>`,C.iv),
- f12:()=>svg(`${face(56,30,11,C.br)}${face(104,30,11,C.br)}<rect x="0" y="80" width="160" height="10" fill="${C.st}" opacity=".5"/>${font(5,56,86,{t:'원장 A',kr:1,c:C.iv})}${font(5,104,86,{t:'원장 B',kr:1,c:C.iv})}`,C.sand),
- f13:()=>svg(`<rect width="160" height="90" fill="url(#g1)" opacity=".7"/>${face(80,32,14,'#e3c3a8')}${font(7,80,84,{t:'다시, 나다운 특별함으로.',kr:1,c:C.br})}`,C.iv),
- f14:()=>svg(`${font(20,80,44,{t:'RE<tspan fill="'+C.ac+'">;</tspan>NIQUE',ls:2})}${font(5.5,80,53,{t:'CLINIC',ls:3,c:C.tp})}${font(6.5,80,68,{t:'르니크한의원',kr:1,c:C.br})}${font(4.5,80,77,{t:'강남 · 역삼  |  2027. 01 OPEN',kr:1,c:C.tp})}`,C.iv),
-};
-
-// ---------- main film data ----------
+// ---------- 메인 필름 데이터 ----------
 const SEQ=[
  {n:'01',t:'Opening',tc:'00:00 – 00:08',cuts:[
-  {f:'f1',tc:'00:00–00:04',d:4,shot:'FS · 고정',vis:'완전한 어둠. 중앙에 테라코타 컬러의 세미콜론(;)이 한 획씩 그려지듯 나타난다. 이어서 아래 점선이 다음 문장을 기다리듯 깜박인다.',cam:'고정 / 모션그래픽',sub:'',na:'',snd:'정적 → 피아노 단음 1회, 긴 잔향'},
-  {f:'f2',tc:'00:04–00:08',d:4,shot:'MS · 랙포커스',vis:'반투명 유리 너머로 비슷한 실루엣 여러 개가 흐릿하게 늘어서 있다. 포커스가 이동하며 가운데 한 사람만 선명해지고, 그 사람에게만 따뜻한 빛이 닿는다.',cam:'랙 포커스, 미세 달리 인',sub:'',na:'모두가 같은 얼굴을 꿈꾸는 시대. 우리는 다시 묻습니다.',snd:'앰비언트 패드 페이드 인'}]},
+  {tc:'00:00–00:04',d:4,shot:'FS · 고정',vis:'잉크(딥 네이비) 어둠. 중앙에 로고에서 떼어 낸 세미콜론 마크가 한 획씩 그려지듯 나타난다. 이어서 아래로 다음 문장을 기다리듯 미세한 빛이 깜박인다.',cam:'고정 / 모션그래픽',sub:'',na:'',snd:'정적 → 피아노 단음 1회, 긴 잔향',note:'세미콜론 마크는 로고 벡터에서 추출한 형태 그대로 사용 (새 도형 금지)'},
+  {tc:'00:04–00:08',d:4,shot:'MS · 랙포커스',vis:'반투명 유리 너머로 비슷한 실루엣 여러 개가 흐릿하게 늘어서 있다. 포커스가 이동하며 가운데 한 사람만 선명해지고, 그 사람에게만 따뜻한 빛이 닿는다.',cam:'랙 포커스, 미세 달리 인',sub:'달라지고 싶지만,<br>다른 사람이 되고 싶지는 않습니다.',na:'달라지고 싶지만, 다른 사람이 되고 싶지는 않습니다.',snd:'앰비언트 패드 페이드 인',note:'가이드북 브랜드 스토리 첫 문장 (고유함 UNIQUE)'}]},
  {n:'02',t:'Name — RE;NIQUE 이름 풀이',tc:'00:08 – 00:22',cuts:[
-  {f:'f3',tc:'00:08–00:12',d:4,shot:'ECU · 하이스피드',vis:'창가로 스며드는 아침 빛 속, 마른 가지 끝에서 새순이 돋는다. 화면 좌측에 RENOUVEAU 타이포와 [르누보] 발음 표기.',cam:'120fps 슬로모션, 슬라이더 좌→우',sub:'RENOUVEAU [르누보]<br>다시 찾아오는 봄, 새로움',na:'르누보, 다시 찾아오는 봄.',snd:'피아노 멜로디 시작',note:'RE 부분만 테라코타로 강조'},
-  {f:'f4',tc:'00:12–00:16',d:4,shot:'CU · 탑뷰→사이드',vis:'회색 조약돌 사이에 결과 색이 다른 돌 하나. 빛이 그 돌의 표면만 쓸고 지나간다. 화면 우측에 UNIQUE 타이포.',cam:'탑뷰에서 사이드로 아크 무빙',sub:'UNIQUE [위니크]<br>세상에 단 하나뿐인, 고유함',na:'위니크, 세상에 단 하나뿐인 고유함.',snd:'',note:'NIQUE 부분만 테라코타로 강조'},
-  {f:'f5',tc:'00:16–00:22',d:6,shot:'타이포 모션',vis:'어두운 배경 위에서 RENOUVEAU의 ‘RE’와 UNIQUE의 ‘NIQUE’만 남고 나머지 글자는 흩어진다. 두 조각이 가운데로 모이며 세미콜론이 생기고 RE;NIQUE가 완성된다. 그 아래 ‘르 니 크’ 한글 발음이 천천히 떠오른다.',cam:'모션그래픽',sub:'RE;NIQUE<br>르 니 크',na:'새로움과 고유함이 만나는 곳, 르니크.',snd:'멜로디가 모이며 화음으로 해결',note:'★ 발음 각인 핵심 컷. 내레이션의 “르니크” 발음과 한글 표기 등장 시점을 맞춤'}]},
+  {tc:'00:08–00:12',d:4,shot:'ECU · 하이스피드',vis:'창가로 스며드는 아침 빛 속, 마른 가지 끝에서 새순이 돋는다. 화면 좌측에 RENOUVEAU 타이포와 [르누보] 발음 표기.',cam:'120fps 슬로모션, 슬라이더 좌→우',sub:'RENOUVEAU [르누보]<br>다시 찾아오는 봄, 새로움',na:'르누보, 다시 찾아오는 봄.',snd:'피아노 멜로디 시작',note:'RE 부분만 오렌지로 강조 (로고가 아닌 설명 타이포이므로 허용)'},
+  {tc:'00:12–00:16',d:4,shot:'CU · 탑뷰→사이드',vis:'회색 조약돌 사이에 결과 색이 다른 돌 하나. 빛이 그 돌의 표면만 쓸고 지나간다. 화면 우측에 UNIQUE 타이포.',cam:'탑뷰에서 사이드로 아크 무빙',sub:'UNIQUE [위니크]<br>세상에 단 하나뿐인, 고유함',na:'위니크, 세상에 단 하나뿐인 고유함.',snd:'',note:'NIQUE 부분만 오렌지로 강조'},
+  {tc:'00:16–00:22',d:6,shot:'타이포 → 로고 모션',vis:'잉크 배경 위에서 RENOUVEAU의 ‘RE’와 UNIQUE의 ‘NIQUE’만 남고 나머지 글자는 흩어진다. 두 조각이 가운데로 모이며 세미콜론이 찍히고, 마지막 프레임은 <b>시그니처 로고 원본 벡터</b>(화이트 단색)로 정확히 맞춰진다. 보호 영역(1X) 바깥 아래로 ‘르니크’ 발음 자막이 떠오른다.',cam:'모션그래픽',sub:'RE;NIQUE CLINIC (로고)<br>르니크',na:'새로움과 고유함이 만나는 곳, 르니크.',snd:'멜로디가 모이며 화음으로 해결',note:'★ 발음 각인 핵심 컷. 로고는 한 색 · 재조판 금지 · 세미콜론 색 분리 금지'}]},
  {n:'03',t:'Philosophy',tc:'00:22 – 00:26',cuts:[
-  {f:'f6',tc:'00:22–00:26',d:4,shot:'CU · 슬로모션',vis:'아이보리 실크가 바람에 천천히 일렁이고, 그 위로 따뜻한 역광이 번진다. 덧대거나 꾸미지 않은 ‘본연’의 질감.',cam:'고정, 120fps',sub:'아름다움은 무언가를 더하는 데서만<br>완성되지 않습니다.',na:'아름다움은, 무언가를 더하는 데서만 완성되지 않습니다.',snd:'음악 잠시 숨 고르기(볼륨 다운)'}]},
+  {tc:'00:22–00:26',d:4,shot:'CU · 슬로모션',vis:'크림색 실크가 바람에 천천히 일렁이고, 그 위로 피치빛 역광이 번진다. 덧대거나 꾸미지 않은 ‘본연’의 질감.',cam:'고정, 120fps',sub:'아름다움은 무언가를 더하는 데서만<br>완성되지 않습니다.',na:'아름다움은, 무언가를 더하는 데서만 완성되지 않습니다.',snd:'음악 잠시 숨 고르기(볼륨 다운)'}]},
  {n:'04',t:'3 Directions — 결 · 선 · 톤',tc:'00:26 – 00:44',cuts:[
-  {f:'f7',tc:'00:26–00:32',d:6,shot:'ECU · 매치컷',vis:'겹겹이 쌓인 자연석 단면을 측광이 훑고 지나간다. 같은 구도·같은 광원으로 맑은 피부결 매크로 컷에 매치컷.',cam:'슬라이더 위→아래 (두 컷 동일 속도)',sub:'I. REBUILD — 결<br>피부의 기반을 다시 세우다.',na:'결을 다시 세우고,',snd:'리듬 비트 미세하게 진입',note:'시술명(여드름·모공·흉터)은 숏폼과 홈페이지에서 소개'},
-  {f:'f8',tc:'00:32–00:38',d:6,shot:'MCU · 역광 실루엣',vis:'역광 속 모델의 옆얼굴. 이마에서 턱선까지 이어지는 윤곽선을 따라 빛의 테두리가 천천히 흐른다(VFX 라인 미세하게).',cam:'아크 무빙 15°',sub:'II. REFINE — 선<br>고유한 선을 섬세하게 다듬다.',na:'선을 섬세하게 다듬고,',snd:'',note:'남성 모델 버전도 함께 촬영해 B컷으로 확보'},
-  {f:'f9',tc:'00:38–00:44',d:6,shot:'CU · 빛 변화',vis:'눈을 감은 모델의 볼 위로 따뜻한 빛이 부드럽게 퍼지며 피부톤이 맑고 고르게 밝아진다(조명 변화로만 연출하고 보정으로 전후 비교를 만들지 않음).',cam:'고정, 조명 디머 업',sub:'III. REVIVE — 톤<br>본연의 맑은 빛을 다시 일깨우다.',na:'본연의 빛을 다시 일깨웁니다.',snd:'멜로디 고조',note:'의료광고 기준상 전후 비교로 보이지 않게 주의'}]},
+  {tc:'00:26–00:32',d:6,shot:'ECU · 매치컷',vis:'겹겹이 쌓인 자연석 단면을 측광이 훑고 지나간다. 같은 구도·같은 광원으로 맑은 피부결 매크로 컷에 매치컷.',cam:'슬라이더 위→아래 (두 컷 동일 속도)',sub:'I. REBUILD — 결<br>피부의 기반을 다시 세우다.',na:'결을 다시 세우고,',snd:'리듬 비트 미세하게 진입',note:'시술명(여드름·모공·흉터)과 기기(안)는 숏폼·홈페이지에서 소개'},
+  {tc:'00:32–00:38',d:6,shot:'MCU · 역광 실루엣',vis:'역광 속 모델의 옆얼굴. 이마에서 턱선까지 이어지는 윤곽선을 따라 빛의 테두리가 천천히 흐른다.',cam:'아크 무빙 15°',sub:'II. REFINE — 선<br>고유한 선을 섬세하게 다듬다.',na:'선을 섬세하게 다듬고,',snd:'',note:'남성 모델 버전도 함께 촬영해 B컷으로 확보'},
+  {tc:'00:38–00:44',d:6,shot:'CU · 빛 변화',vis:'눈을 감은 모델의 볼 위로 피치빛이 부드럽게 퍼지며 피부톤이 맑고 고르게 밝아진다(조명 변화로만 연출하고 보정으로 전후 비교를 만들지 않음).',cam:'고정, 조명 디머 업',sub:'III. REVIVE — 톤<br>본연의 맑은 빛을 다시 일깨우다.',na:'본연의 빛을 다시 일깨웁니다.',snd:'멜로디 고조',note:'의료광고 기준상 전후 비교로 보이지 않게 주의'}]},
  {n:'05',t:'Clinic — 공간과 사람',tc:'00:44 – 00:54',cuts:[
-  {f:'f10',tc:'00:44–00:48',d:4,shot:'WS · 달리 인',vis:'르니크한의원 리셉션과 아치형 복도. 아이보리 톤 공간에 자연광이 들어오고, 벽면 사인의 세미콜론이 살짝 보인다.',cam:'짐벌 달리 인',sub:'',na:'세 가지 방향, 하나의 철학.',snd:'',note:'인테리어 완공 후 촬영'},
-  {f:'f11',tc:'00:48–00:51',d:3,shot:'CU · 손',vis:'상담 테이블. 원장의 손이 피부 진단 결과지를 고객 쪽으로 돌려 보여 준다. 고객은 고개를 끄덕인다(얼굴 비노출).',cam:'핸드헬드 미세 흔들림',sub:'',na:'한 사람, 한 사람의 고유함에 집중합니다.',snd:'',note:'출연자는 모델. 진단 장비 로고 비노출'},
-  {f:'f12',tc:'00:51–00:54',d:3,shot:'MS · 포트레이트',vis:'원장 2인이 각자 진료실 앞에 서서 카메라를 정면으로 바라본다. 하단에 이름·직함 자막.',cam:'고정 → 미세 푸시 인',sub:'대표원장 OOO · 원장 OOO',na:'',snd:'',note:'퍼스널 분야(온다 / SMP·문신제거)는 확정 전이므로 넣지 않음'}]},
+  {tc:'00:44–00:48',d:4,shot:'WS · 달리 인',vis:'르니크 강남 리셉션과 아치형 복도. 크림 톤 공간에 자연광이 들어오고, 벽면 사인의 로고가 살짝 보인다.',cam:'짐벌 달리 인',sub:'',na:'세 가지 방향, 하나의 철학.',snd:'',note:'인테리어 완공 후 촬영. 사인 로고는 한 색 규정 확인'},
+  {tc:'00:48–00:51',d:3,shot:'CU · 손',vis:'상담 테이블. 원장의 손이 피부 진단 결과지를 고객 쪽으로 돌려 보여 준다. 고객은 고개를 끄덕인다(얼굴 비노출).',cam:'핸드헬드 미세 흔들림',sub:'',na:'한 부위가 아니라, 한 사람을 봅니다.',snd:'',note:'가이드북 가치 ‘균형 BALANCE’ · 출연자는 모델 · 진단 장비 로고 비노출'},
+  {tc:'00:51–00:54',d:3,shot:'MS · 포트레이트',vis:'원장 2인이 각자 진료실 앞에 서서 카메라를 정면으로 바라본다. 하단에 이름·직함 자막(Pretendard).',cam:'고정 → 미세 푸시 인',sub:'대표원장 OOO · 원장 OOO',na:'',snd:'',note:'퍼스널 분야(온다 / SMP·문신제거)는 확정 전이므로 넣지 않음 · 가운 자수는 모노그램 사용'}]},
  {n:'06',t:'Ending',tc:'00:54 – 01:00',cuts:[
-  {f:'f13',tc:'00:54–00:57',d:3,shot:'MCU · 정면',vis:'#02 컷에서 선명해졌던 그 모델이 따뜻한 빛 속에서 카메라를 바라보며 옅게 미소 짓는다. 오프닝과 수미상관.',cam:'고정',sub:'다시, 나다운 특별함으로.',na:'다시, 나다운 특별함으로.',snd:'피아노 마지막 프레이즈'},
-  {f:'f14',tc:'00:57–01:00',d:3,shot:'엔드 카드',vis:'아이보리 배경 위로 세미콜론이 먼저 찍히고 RE;NIQUE CLINIC 로고가 완성된다. 아래에 의료기관 명칭과 위치·개원일.',cam:'모션그래픽',sub:'RE;NIQUE CLINIC<br>르니크한의원 · 강남 역삼 · 2027.01 OPEN',na:'르니크한의원.',snd:'사운드 로고(오프닝 단음 반복) → 페이드 아웃',note:'의료기관 명칭 필수 표기'}]},
+  {tc:'00:54–00:57',d:3,shot:'MCU · 정면',vis:'#02 컷에서 선명해졌던 그 모델이 따뜻한 빛 속에서 카메라를 바라보며 옅게 미소 짓는다. 오프닝과 수미상관.',cam:'고정',sub:'다시, 나다운 특별함으로.',na:'다시, 나다운 특별함으로.',snd:'피아노 마지막 프레이즈'},
+  {tc:'00:57–01:00',d:3,shot:'엔드 카드',field:true,vis:'가이드북 기본형. 화면 전체를 시그니처 오렌지 면으로 채우고, 세미콜론 마크가 먼저 찍힌 뒤 화이트 시그니처 로고가 완성된다. 로고 하단 0.5X에 법정 명칭 ‘르니크한의원’을 병기한다. 면 안에는 그 밖의 요소를 넣지 않는다.',cam:'모션그래픽',sub:'RE;NIQUE CLINIC (화이트 시그니처)<br>르니크한의원 (법정 명칭 병기)',na:'르니크.',snd:'사운드 로고(오프닝 단음 반복) → 페이드 아웃',note:'의료광고 명칭란 = 법정 표기 의무 접점. 개원일·위치는 컷다운에서 별도 크림 카드로'}]},
 ];
 
 // ---------- GPT 생성 이미지 + 텍스트 오버레이 ----------
 const IMG_DIR=encodeURI('스토리보드 사진/');
 const OV={
- '03':`<div class="ov l"><div class="en"><span style="color:var(--accent)">RE</span>NOUVEAU</div><div class="kr">[르누보] 다시 찾아오는 봄, 새로움</div></div>`,
- '04':`<div class="ov r"><div class="en">U<span style="color:var(--accent)">NIQUE</span></div><div class="kr">[위니크] 세상에 단 하나뿐인, 고유함</div></div>`,
- '05':`<div class="ov c light"><div class="en big">RE<span class="semi">;</span>NIQUE</div><div class="kr" style="letter-spacing:.4em;color:#d5bba4">르 니 크</div></div>`,
- '06':`<div class="ov c t"><div class="kr" style="font-size:clamp(10px,1.2vw,14px);color:var(--brown)">아름다움은 무언가를 더하는 데서만 완성되지 않습니다.</div></div>`,
- '07':`<div class="ov l b light" style="background:linear-gradient(20deg,rgba(39,33,29,.55) 0%,rgba(39,33,29,0) 45%)"><div class="ch" style="color:#fff">결</div><div class="en" style="font-size:clamp(12px,1.5vw,18px)">I. REBUILD</div></div>`,
- '08':`<div class="ov l b"><div class="ch">선</div><div class="en" style="font-size:clamp(12px,1.5vw,18px);color:var(--brown)">II. REFINE</div></div>`,
- '09':`<div class="ov l b"><div class="ch">톤</div><div class="en" style="font-size:clamp(12px,1.5vw,18px);color:var(--brown)">III. REVIVE</div></div>`,
- '13':`<div class="ov l" style="padding-left:5%"><div class="kr" style="font-size:clamp(10px,1.2vw,14px);color:var(--brown);line-height:1.6">다시,<br>나다운<br>특별함으로.</div></div>`,
- '14':`<div class="ov c"><div class="en big">RE<span class="semi" style="color:var(--accent)">;</span>NIQUE</div><div style="font-family:var(--serif-en);font-size:clamp(8px,.9vw,11px);letter-spacing:.4em;color:var(--taupe)">CLINIC</div><div class="kr" style="margin-top:10px;color:var(--brown)">르니크한의원</div><div style="font-size:clamp(7px,.8vw,10px);color:var(--taupe);margin-top:2px">강남 · 역삼 | 2027. 01 OPEN</div></div>`,
+ '02':`<div class="ov c b light"><div class="kr" style="font-size:clamp(9px,1.05vw,13px);line-height:1.6">달라지고 싶지만,<br>다른 사람이 되고 싶지는 않습니다.</div></div>`,
+ '03':`<div class="ov l"><div class="en"><em>RE</em>NOUVEAU</div><div class="kr">[르누보] 다시 찾아오는 봄, 새로움</div></div>`,
+ '04':`<div class="ov r"><div class="en">U<em>NIQUE</em></div><div class="kr">[위니크] 세상에 단 하나뿐인, 고유함</div></div>`,
+ '05':`<div class="ov c light"><img class="sig" src="${LOGO_WHITE}" alt="RE;NIQUE CLINIC"><div class="kr" style="letter-spacing:.5em;padding-left:.5em;margin-top:7%;color:var(--cream)">르니크</div></div>`,
+ '06':`<div class="ov c t"><div class="kr" style="font-size:clamp(10px,1.2vw,14px);color:var(--txt)">아름다움은 무언가를 더하는 데서만 완성되지 않습니다.</div></div>`,
+ '07':`<div class="ov l b light" style="background:linear-gradient(20deg,rgba(20,35,43,.6) 0%,rgba(20,35,43,0) 45%)"><div class="ch" style="color:#fff">결</div><div class="en" style="font-size:clamp(12px,1.5vw,18px)">I. REBUILD</div></div>`,
+ '08':`<div class="ov l b"><div class="ch">선</div><div class="en" style="font-size:clamp(12px,1.5vw,18px);color:var(--ink)">II. REFINE</div></div>`,
+ '09':`<div class="ov l b"><div class="ch">톤</div><div class="en" style="font-size:clamp(12px,1.5vw,18px);color:var(--ink)">III. REVIVE</div></div>`,
+ '13':`<div class="ov l" style="padding-left:5%"><div class="kr" style="font-size:clamp(10px,1.2vw,14px);color:var(--ink);line-height:1.6">다시,<br>나다운<br>특별함으로.</div></div>`,
 };
-const photo=(no,withOv)=>`<div class="ph"><img src="${IMG_DIR}MAIN_CUT_${no}_16x9.jpg" alt="CUT ${no}" loading="lazy">${withOv&&OV[no]?OV[no]:''}</div>`;
+const photo=(no,withOv,c)=> c&&c.field
+  ? `<div class="ph field"><img src="${LOGO_WHITE}" alt="RE;NIQUE CLINIC"><div class="lock">르니크한의원</div></div>`
+  : `<div class="ph"><img class="bg" src="${IMG_DIR}MAIN_CUT_${no}_16x9.jpg" alt="CUT ${no}" loading="lazy">${withOv&&OV[no]?OV[no]:''}</div>`;
 
-// render strip + scenes
 let idx=0,strip='',html='';
 SEQ.forEach(s=>{
   html+=`<div class="seq-title"><span class="n">${s.n}</span><h3>${s.t}</h3><span class="tc">${s.tc}</span></div>`;
   s.cuts.forEach(c=>{
     idx++;const no=String(idx).padStart(2,'0');
-    strip+=`<a href="#c${no}">${photo(no,false)}${no}</a>`;
+    strip+=`<a href="#c${no}">${photo(no,false,c)}${no}</a>`;
     html+=`<article class="scene" id="c${no}">
-      <div class="frame">${photo(no,true)}<span class="cut">CUT ${no}</span><span class="dur">${c.d}″</span><div class="shot"><span>${c.tc}</span><span>${c.shot}</span></div></div>
+      <div class="frame">${photo(no,true,c)}<span class="cut">CUT ${no}</span><span class="dur">${c.d}″</span><div class="shot"><span>${c.tc}</span><span>${c.shot}</span></div></div>
       <dl class="info">
         <dt>화면</dt><dd>${c.vis}${c.note?`<span class="note">※ ${c.note}</span>`:''}</dd>
         <dt>카메라</dt><dd>${c.cam}</dd>
@@ -294,29 +299,30 @@ SEQ.forEach(s=>{
 document.getElementById('strip').innerHTML=strip;
 document.getElementById('scenes').innerHTML=html;
 
-// ---------- shorts (vertical) ----------
+// ---------- 숏폼 (세로) ----------
 const V={
- rebuildObj:()=>svg(`<svg width="90" height="160">${strata(90,160,12)}</svg>`,C.iv,1),
- rebuildSkin:()=>svg(`<rect width="90" height="160" fill="#ead2bf"/>${[...Array(70)].map((_,i)=>`<circle cx="${(i*37)%88}" cy="${(i*61)%158}" r=".6" fill="${C.tp}" opacity=".45"/>`).join('')}`,C.iv,1),
- refineObj:()=>svg(`<path d="M10 160 C10 110 70 100 60 60 S40 10 80 0" stroke="${C.br}" stroke-width="1.4" fill="none"/><path d="M0 160 C2 112 60 104 52 62 S34 12 70 0" stroke="${C.st}" fill="none"/>`,C.sand,1),
- refineSkin:()=>svg(`<rect width="90" height="160" fill="url(#g1)"/><path d="M40 0 C30 30 30 46 36 60 C32 70 36 80 42 88 C48 102 62 106 76 104 C80 130 82 160 82 160 H90 V0Z" fill="${C.br}"/><path d="M36 60 C32 70 36 80 42 88 C48 102 62 106 76 104" stroke="${C.acs}" fill="none"/>`,C.sand,1),
- reviveObj:()=>svg(`<rect width="90" height="160" fill="url(#g1)"/><circle cx="56" cy="88" r="10" fill="#fff" opacity=".7" filter="url(#bl)"/>`,C.sand,1),
- reviveSkin:()=>svg(`<rect width="90" height="160" fill="url(#g1)"/>${face(45,62,20,'#e8cdb6')}`,C.sand,1),
- copy:(en,kr,q)=>svg(`${font(9,45,70,{t:en,ls:1})}${font(16,45,96,{t:kr,kr:1,c:C.ac})}${font(5,45,114,{t:q,kr:1,c:C.br})}`,C.iv,1),
- logo:()=>svg(`${font(13,45,74,{t:'RE<tspan fill="'+C.ac+'">;</tspan>NIQUE',ls:1})}${font(4.5,45,82,{t:'CLINIC',ls:2,c:C.tp})}${font(6,45,96,{t:'르니크한의원',kr:1,c:C.br})}`,C.iv,1),
+ rebuildObj:()=>svg(`<svg width="90" height="160">${strata(90,160,12)}</svg>`,C.cream),
+ rebuildSkin:()=>svg(`<rect width="90" height="160" fill="${C.skin}"/>${[...Array(70)].map((_,i)=>`<circle cx="${(i*37)%88}" cy="${(i*61)%158}" r=".6" fill="${C.sl}" opacity=".35"/>`).join('')}`,C.cream),
+ refineObj:()=>svg(`<path d="M10 160 C10 110 70 100 60 60 S40 10 80 0" stroke="${C.ink}" stroke-width="1.4" fill="none"/><path d="M0 160 C2 112 60 104 52 62 S34 12 70 0" stroke="${C.pe}" fill="none"/>`,C.cream),
+ refineSkin:()=>svg(`<rect width="90" height="160" fill="url(#g1)"/><path d="M40 0 C30 30 30 46 36 60 C32 70 36 80 42 88 C48 102 62 106 76 104 C80 130 82 160 82 160 H90 V0Z" fill="${C.ink}"/><path d="M36 60 C32 70 36 80 42 88 C48 102 62 106 76 104" stroke="${C.pe}" fill="none"/>`,C.sand),
+ reviveObj:()=>svg(`<rect width="90" height="160" fill="url(#g1)"/><circle cx="56" cy="88" r="10" fill="#fff" opacity=".7" filter="url(#bl)"/>`,C.sand),
+ reviveSkin:()=>svg(`<rect width="90" height="160" fill="url(#g1)"/>${face(45,62,20,C.skin)}`,C.sand),
+ copy:(en,kr,q)=>svg(`${font(9,45,70,{t:en,ls:1,w:500})}${font(16,45,96,{t:kr,kr:1,c:C.or})}${font(5,45,114,{t:q,kr:1,c:C.txt})}`,C.cream),
+ end:()=>svg(`<image href="${LOGO_WHITE}" x="13" y="68" width="64" height="17"/>${font(3.6,45,93,{t:'르니크한의원',sans:1,w:600,ls:1.1,c:'#fff'})}`,C.or),
 };
 const SHORTS=[
- {en:'REBUILD',kr:'결',q:'“피부의 기반을 다시 세우다.”',items:'여드름 · 모공 · 흉터',cuts:[
-  [V.rebuildObj(),'0–4″','자연석 단면 위를 측광이 훑음'],[V.rebuildSkin(),'4–9″','같은 구도의 피부결 매크로로 매치컷'],[V.copy('I. REBUILD','결','피부의 기반을 다시 세우다.'),'9–13″','카피 + 하단 “여드름 · 모공 · 흉터”'],[V.logo(),'13–15″','로고 엔드 카드']]},
- {en:'REFINE',kr:'선',q:'“고유한 선을 섬세하게 다듬다.”',items:'리프팅 · 윤곽 · 탄력',cuts:[
-  [V.refineObj(),'0–4″','실크 위에 흐르는 곡선의 그림자'],[V.refineSkin(),'4–9″','역광 옆얼굴, 턱선을 따라 빛이 흐름'],[V.copy('II. REFINE','선','고유한 선을 섬세하게 다듬다.'),'9–13″','카피 + 하단 “리프팅 · 윤곽 · 탄력”'],[V.logo(),'13–15″','로고 엔드 카드']]},
- {en:'REVIVE',kr:'톤',q:'“본연의 맑은 빛을 다시 일깨우다.”',items:'기미 · 잡티 · 홍조',cuts:[
-  [V.reviveObj(),'0–4″','유리·물에 맺힌 따뜻한 빛이 번짐'],[V.reviveSkin(),'4–9″','볼 위로 빛이 퍼지며 톤이 밝아짐'],[V.copy('III. REVIVE','톤','본연의 맑은 빛을 다시 일깨우다.'),'9–13″','카피 + 하단 “기미 · 잡티 · 홍조”'],[V.logo(),'13–15″','로고 엔드 카드']]},
+ {en:'REBUILD',kr:'결',q:'“피부의 기반을 다시 세우다.”',items:'여드름 · 모공 · 흉터',dev:'포텐자 · CO2 · 어븀야그 · 피코',cuts:[
+  [V.rebuildObj(),'0–4″','자연석 단면 위를 측광이 훑음'],[V.rebuildSkin(),'4–9″','같은 구도의 피부결 매크로로 매치컷'],[V.copy('I. REBUILD','결','피부의 기반을 다시 세우다.'),'9–13″','카피 + 하단 “여드름 · 모공 · 흉터”'],[V.end(),'13–15″','엔드 카드 (오렌지 면)']]},
+ {en:'REFINE',kr:'선',q:'“고유한 선을 섬세하게 다듬다.”',items:'리프팅 · 윤곽 · 탄력',dev:'인모드 · 슈링크 · 볼뉴머 · 온다 · 울쎄라 · 덴서티(써마지) · 티타늄(올타이트)',cuts:[
+  [V.refineObj(),'0–4″','실크 위에 흐르는 곡선의 그림자'],[V.refineSkin(),'4–9″','역광 옆얼굴, 턱선을 따라 빛이 흐름'],[V.copy('II. REFINE','선','고유한 선을 섬세하게 다듬다.'),'9–13″','카피 + 하단 “리프팅 · 윤곽 · 탄력”'],[V.end(),'13–15″','엔드 카드 (오렌지 면)']]},
+ {en:'REVIVE',kr:'톤',q:'“본연의 맑은 빛을 다시 일깨우다.”',items:'기미 · 잡티 · 홍조',dev:'피코 · 595 PDL · 큐스위치 · 카프리',cuts:[
+  [V.reviveObj(),'0–4″','유리·물에 맺힌 빛이 피치빛으로 번짐'],[V.reviveSkin(),'4–9″','볼 위로 빛이 퍼지며 톤이 밝아짐'],[V.copy('III. REVIVE','톤','본연의 맑은 빛을 다시 일깨우다.'),'9–13″','카피 + 하단 “기미 · 잡티 · 홍조”'],[V.end(),'13–15″','엔드 카드 (오렌지 면)']]},
 ];
 document.getElementById('shortsGrid').innerHTML=SHORTS.map(s=>`<div class="short">
   <h3>${s.en}<span>${s.kr}</span></h3><div class="q">${s.q}</div>
   <div class="vgrid">${s.cuts.map((c,i)=>`<figure>${c[0]}<figcaption><b>0${i+1} · ${c[1]}</b>${c[2]}</figcaption></figure>`).join('')}</div>
-  <div class="meta2">카테고리: ${s.items}<br>사운드: 메인 필름 음원 15″ 편집본 · 내레이션 없이 자막만<br>캡션: 시술 안내 + 홈페이지 링크(UTM)</div></div>`).join('');
+  <div class="meta2">카테고리: ${s.items}<br>캡션 기기(안): ${s.dev} — 샷 수·회복 기간과 함께 명시<br>사운드: 메인 필름 음원 15″ 편집본 · 내레이션 없이 자막만<br>캡션: 시술 안내 + 홈페이지 링크(UTM) · #renique</div></div>`).join('');
+
 document.querySelectorAll('.tbl').forEach(t=>{const h=[...t.querySelectorAll('thead th')].map(th=>th.textContent.trim());t.querySelectorAll('tbody tr').forEach(tr=>[...tr.children].forEach((td,i)=>td.setAttribute('data-label',h[i]||'')));});
 </script>
 </body>
