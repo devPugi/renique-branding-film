@@ -11,7 +11,6 @@
 <link rel="stylesheet" href="https://hangeul.pstatic.net/hangeul_static/css/maru-buri.css">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Noto+Serif+KR:wght@400;600&display=swap" rel="stylesheet">
 <style>
-/* RE;NIQUE Brand Guideline v1.4 · 에스프레소 · 오렌지 · 화이트 */
 :root{
   --esp:#28211D; --esp900:#1E1916; --esp700:#352C26; --linedk:#4C413A; --taupe:#A39A92;
   --white:#FFFFFF; --mist:#F5F3F0; --line:#E7E2DD; --mocha:#6B5F57; --txt:#3E352F;
@@ -22,13 +21,12 @@
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-/* 문서 매체 → 화이트 바탕(화이트 60 · 에스프레소 30 · 오렌지 10) */
 body{background:var(--white);color:var(--esp);font-family:var(--sans);font-weight:400;line-height:1.75;font-size:15px;-webkit-font-smoothing:antialiased;word-break:keep-all;overflow-wrap:break-word}
 .wrap{max-width:1120px;margin:0 auto;padding:0 40px}
 @media(max-width:720px){.wrap{padding:0 16px}}
 img.logo{display:block;height:auto}
 
-/* cover · 에스프레소 바탕 한 화면 */
+/* cover */
 .cover{min-height:100svh;display:flex;flex-direction:column;justify-content:space-between;padding:48px 0;background:var(--esp);color:var(--cream)}
 .cover > .wrap{width:100%}
 .cover .meta{display:flex;justify-content:space-between;gap:12px;font-size:12px;letter-spacing:.18em;color:var(--taupe);text-transform:uppercase}
@@ -40,7 +38,6 @@ img.logo{display:block;height:auto}
 .cover .foot{display:flex;gap:32px;flex-wrap:wrap;font-size:13px;color:var(--cream);border-top:1px solid var(--linedk);padding-top:20px}
 .cover .foot b{display:block;font-size:11px;letter-spacing:.16em;color:var(--orange);font-weight:700}
 
-/* toc */
 nav.toc{position:sticky;top:0;z-index:5;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 nav.toc .wrap{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
 nav.toc a{flex:none;padding:14px 12px;font-size:12px;letter-spacing:.04em;color:var(--mocha);text-decoration:none;white-space:nowrap}
@@ -49,9 +46,11 @@ nav.toc a:hover{color:var(--deep)}
 section{padding:96px 0;border-bottom:1px solid var(--line)}
 @media(max-width:720px){section{padding:64px 0}}
 .eyebrow{font-size:11px;font-weight:700;letter-spacing:.24em;color:var(--deep);text-transform:uppercase}
-h2{font-family:var(--serif-kr);font-weight:400;font-size:clamp(26px,3.2vw,36px);margin:10px 0 32px;letter-spacing:-.01em;line-height:1.4}
+h2{font-family:var(--serif-kr);font-weight:400;font-size:clamp(26px,3.2vw,36px);margin:10px 0 28px;letter-spacing:-.01em;line-height:1.4}
 h3{font-family:var(--serif-kr);font-weight:600;font-size:19px;margin-bottom:10px;line-height:1.45}
-p.lead{font-size:17px;color:var(--txt);max-width:760px;margin-bottom:40px}
+.sub-h{margin:64px 0 8px}
+.sub-p{color:var(--txt);margin-bottom:22px;max-width:760px}
+p.lead{font-size:17px;color:var(--txt);max-width:780px;margin-bottom:40px}
 .grid{display:grid;gap:20px}
 .g2{grid-template-columns:repeat(2,1fr)} .g3{grid-template-columns:repeat(3,1fr)} .g4{grid-template-columns:repeat(4,1fr)}
 @media(max-width:960px){.g4{grid-template-columns:repeat(2,1fr)}}
@@ -64,23 +63,16 @@ p.lead{font-size:17px;color:var(--txt);max-width:760px;margin-bottom:40px}
 .card li:first-child{border-top:0}
 .card li::before{content:"";position:absolute;left:0;top:17px;width:6px;height:1px;background:var(--orange)}
 .card li b{color:var(--esp)}
+.tag{display:inline-block;font-family:var(--sans);font-size:11px;font-weight:600;letter-spacing:.04em;padding:3px 10px;border-radius:20px;border:1px solid currentColor;vertical-align:middle;color:var(--deep)}
 
-.tag{display:inline-block;font-family:var(--sans);font-size:11px;font-weight:600;letter-spacing:.04em;padding:3px 10px;border-radius:20px;border:1px solid currentColor;vertical-align:middle}
-.tag.ok{color:var(--esp)} .tag.hold{color:var(--deep)} .tag.chk{color:var(--mocha)} .tag.new{color:#fff;background:var(--deep);border-color:var(--deep)}
-
-/* decisions */
-.decision{display:grid;grid-template-columns:64px 1fr;gap:24px;padding:32px 0;border-top:1px solid var(--line)}
-.decision:first-of-type{border-top:0}
-.decision .no{font-family:var(--serif-en);font-size:44px;line-height:1;color:var(--taupe)}
-.decision h3{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
-.decision > div > p{color:var(--txt)}
-.decision .apply{margin-top:14px;background:var(--mist);border-left:2px solid var(--orange);padding:14px 18px;font-size:14px;color:var(--txt)}
-.decision .apply b{color:var(--esp);font-weight:600}
-.decision s{color:var(--taupe)}
-.rules{margin-top:14px;display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
-.rules div{background:var(--white);border:1px solid var(--line);padding:14px 16px;font-size:13.5px;color:var(--txt)}
-.rules div > b:first-child{display:block;font-size:11px;letter-spacing:.16em;color:var(--deep);font-weight:700;margin-bottom:4px;text-transform:uppercase}
-@media(max-width:600px){.decision{grid-template-columns:1fr;gap:8px}.rules{grid-template-columns:1fr}}
+/* background / points */
+.bg-row{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);margin-bottom:20px}
+.bg-row div{padding:26px 24px;border-left:1px solid var(--line)}
+.bg-row div:first-child{border-left:0}
+.bg-row .n{font-family:var(--serif-en);font-size:30px;font-weight:600;color:var(--orange);line-height:1}
+.bg-row h4{font-family:var(--serif-kr);font-weight:600;font-size:17px;margin:10px 0 6px}
+.bg-row p{font-size:14px;color:var(--txt)}
+@media(max-width:860px){.bg-row{grid-template-columns:1fr}.bg-row div{border-left:0;border-top:1px solid var(--line)}.bg-row div:first-child{border-top:0}}
 
 /* name block */
 .name{background:var(--white);border:1px solid var(--line);padding:48px 24px 40px;text-align:center}
@@ -91,8 +83,13 @@ p.lead{font-size:17px;color:var(--txt);max-width:760px;margin-bottom:40px}
 .name .plus{font-family:var(--serif-en);font-size:40px;color:var(--taupe)}
 .name .logo{width:clamp(220px,36vw,380px);margin:40px auto 0}
 .name .pron{font-family:var(--serif-kr);font-size:18px;letter-spacing:.5em;color:var(--txt);margin-top:28px;padding-left:.5em}
-.name .cap{font-size:12px;color:var(--mocha);margin-top:10px}
 @media(max-width:600px){.name .row{grid-template-columns:1fr}.name .plus{font-size:30px}}
+
+.story{background:var(--esp);color:var(--cream);padding:48px;margin-top:20px;display:grid;grid-template-columns:1fr 1.1fr;gap:40px;align-items:center}
+.story .q{font-family:var(--serif-kr);font-size:clamp(22px,2.6vw,30px);line-height:1.6}
+.story p{font-family:var(--serif-kr);color:var(--taupe);font-size:15px;line-height:2}
+.story p b{color:var(--cream);font-weight:400}
+@media(max-width:760px){.story{grid-template-columns:1fr;padding:32px 22px;gap:20px}}
 
 /* categories */
 .cat{background:var(--white);border:1px solid var(--line);overflow:hidden;display:flex;flex-direction:column}
@@ -107,7 +104,6 @@ p.lead{font-size:17px;color:var(--txt);max-width:760px;margin-bottom:40px}
 .cat .vis.v-velo{background:repeating-linear-gradient(176deg,var(--mist) 0 10px,#D8D1CA 10px 13px,#fff 13px 26px,var(--line) 26px 30px)}
 .cat .vis.v-eclat{background:radial-gradient(circle at 70% 60%,#fff 0%,rgba(232,110,38,.55) 24%,var(--mist) 62%)}
 
-/* values */
 .val{background:var(--mist);border:1px solid var(--line);padding:22px}
 .val .en{font-family:var(--serif-en);font-size:13px;letter-spacing:.2em;color:var(--deep);font-weight:600}
 .val h4{font-family:var(--serif-kr);font-weight:600;font-size:20px;margin:2px 0 8px}
@@ -115,14 +111,12 @@ p.lead{font-size:17px;color:var(--txt);max-width:760px;margin-bottom:40px}
 .val .film{margin-top:10px;padding-top:10px;border-top:1px dashed var(--line);font-size:13px;color:var(--esp)}
 .val .film b{color:var(--deep);font-weight:600}
 
-/* table */
 .tbl{width:100%;border-collapse:collapse;font-size:14px}
 .tbl th,.tbl td{text-align:left;padding:14px 12px;border-bottom:1px solid var(--line);vertical-align:top;color:var(--txt)}
 .tbl th{font-size:11px;letter-spacing:.14em;color:var(--mocha);font-weight:600;border-bottom:1px solid var(--esp)}
 .tbl td:first-child{font-weight:600;white-space:nowrap;color:var(--esp)}
 .scroll{overflow-x:auto}
 
-/* flow */
 .flow{display:grid;grid-template-columns:repeat(6,1fr);border:1px solid var(--line)}
 .flow div{padding:20px 16px;border-left:1px solid var(--line);background:var(--white)}
 .flow div:first-child{border-left:0}
@@ -133,11 +127,9 @@ p.lead{font-size:17px;color:var(--txt);max-width:760px;margin-bottom:40px}
 .bar i{display:block;height:100%}
 @media(max-width:860px){.flow{grid-template-columns:repeat(2,1fr)}.flow div:nth-child(odd){border-left:0}.flow div{border-top:1px solid var(--line)}.flow div:nth-child(-n+2){border-top:0}}
 
-.script{font-family:var(--serif-kr);font-size:16px;line-height:2.1;background:var(--mist)}
+.script{font-family:var(--serif-kr);font-size:16px;line-height:2.1}
 .script em{font-style:normal;color:var(--deep)}
-.script .new{background:linear-gradient(transparent 62%,rgba(232,110,38,.22) 62%)}
 
-/* palette */
 .sw{display:flex;flex-direction:column;border:1px solid var(--line);background:var(--white)}
 .sw i{height:80px;display:flex;align-items:flex-end;padding:8px 10px;font-style:normal;font-size:12px;font-family:var(--serif-kr)}
 .sw span{padding:10px 12px;font-size:12px;color:var(--mocha)}
@@ -147,7 +139,6 @@ p.lead{font-size:17px;color:var(--txt);max-width:760px;margin-bottom:40px}
 .grad{height:80px;background:linear-gradient(135deg,var(--orange) 0%,var(--deep) 100%);display:flex;align-items:flex-end;padding:12px;color:#fff;font-size:12px;letter-spacing:.06em}
 .small{font-size:13px;color:var(--mocha)}
 
-/* timeline */
 .tl{position:relative;padding-left:28px}
 .tl::before{content:"";position:absolute;left:6px;top:6px;bottom:6px;width:1px;background:var(--line)}
 .tl .s{position:relative;padding:0 0 26px}
@@ -166,10 +157,13 @@ p.lead{font-size:17px;color:var(--txt);max-width:760px;margin-bottom:40px}
 .check li b{font-weight:600}
 .check li small{display:block;color:var(--mocha);font-size:13px}
 
-footer{padding:56px 0;text-align:center;color:var(--mocha);font-size:13px;letter-spacing:.06em}
-footer img{width:150px;margin:0 auto 12px}
+.closing{background:var(--esp);color:var(--cream);text-align:center;padding:96px 24px}
+.closing img{width:clamp(200px,30vw,320px);margin:0 auto 28px}
+.closing h2{color:var(--cream);margin:0 0 12px}
+.closing p{color:var(--taupe);max-width:620px;margin:0 auto}
 
-/* mobile */
+footer{padding:40px 0;text-align:center;color:var(--taupe);font-size:12px;letter-spacing:.06em;background:var(--esp900)}
+
 @media(max-width:600px){
   body{font-size:14px}
   .cover{min-height:auto;padding:32px 0 40px;gap:56px}
@@ -178,8 +172,6 @@ footer img{width:150px;margin:0 auto 12px}
   .cover .foot{display:grid;grid-template-columns:1fr 1fr;gap:16px}
   p.lead{font-size:15px;margin-bottom:28px}
   .card{padding:22px 18px}
-  .decision .no{font-size:32px}
-  .decision .apply{padding:12px 14px}
   .name{padding:36px 16px}
   .tbl thead{display:none}
   .tbl,.tbl tbody,.tbl tr,.tbl td{display:block;width:100%}
@@ -189,6 +181,7 @@ footer img{width:150px;margin:0 auto 12px}
   .tbl td[data-label]:not(:first-child)::before{content:attr(data-label);display:inline-block;width:72px;font-size:11px;letter-spacing:.08em;color:var(--mocha);font-weight:600}
   .check li{padding-left:40px}
   .ratio{font-size:10px}
+  .closing{padding:64px 16px}
 }
 @media print{nav.toc{display:none}section{padding:48px 0;break-inside:avoid-page}.cover{min-height:auto;height:100vh}body{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
 </style>
@@ -196,130 +189,80 @@ footer img{width:150px;margin:0 auto 12px}
 <body>
 
 <header class="cover">
-  <div class="wrap meta"><span>Branding Film · Planning</span><span>Ver. 1.2 · 2026.11.23 · 브랜드 가이드북 v1.4 반영</span></div>
+  <div class="wrap meta"><span>Branding Film Proposal</span><span>2026. 11</span></div>
   <div class="wrap">
     <img class="logo" src="assets/logo/renique_signature_white.svg" alt="RE;NIQUE CLINIC" width="1186" height="345">
     <div class="sub">Renouveau Unique — <b>다시, 나다운 특별함으로.</b></div>
-    <div class="doc">르니크 브랜딩 영상 기획안<small>브랜드 필름 · 숏폼 · 홈페이지 루프 영상 제작 계획</small></div>
+    <div class="doc">르니크 브랜딩 영상 기획안<small>브랜드 필름 · 카테고리 숏폼 · 홈페이지 영상 제작 제안</small></div>
   </div>
   <div class="wrap foot">
     <div><b>CLIENT</b>르니크 강남</div>
-    <div><b>OPENING</b>2027년 1월 예정</div>
-    <div><b>DELIVERABLE</b>메인 필름 60″ 외 5종</div>
-    <div><b>STATUS</b>기획안 검토용 초안</div>
+    <div><b>OPENING</b>2027년 1월</div>
+    <div><b>SCOPE</b>메인 필름 60″ 외 5종</div>
+    <div><b>DATE</b>2026. 11</div>
   </div>
 </header>
 
 <nav class="toc"><div class="wrap">
-  <a href="#s1">01 확정 사항</a><a href="#s2">02 프로젝트 개요</a><a href="#s3">03 크리에이티브 콘셉트</a><a href="#s4">04 영상 구성</a><a href="#s5">05 톤앤매너</a><a href="#s6">06 제작 라인업</a><a href="#s7">07 촬영 계획</a><a href="#s8">08 일정</a><a href="#s9">09 유의 사항</a><a href="#s10">10 확인 요청</a>
+  <a href="#s1">01 제안 개요</a><a href="#s2">02 브랜드 이해</a><a href="#s3">03 크리에이티브 콘셉트</a><a href="#s4">04 영상 구성</a><a href="#s5">05 비주얼 가이드</a><a href="#s6">06 제작 라인업</a><a href="#s7">07 제작 계획</a><a href="#s8">08 추진 일정</a><a href="#s9">09 운영 기준</a><a href="#s10">10 협의 사항</a>
 </div></nav>
 
 <!-- 01 -->
 <section id="s1"><div class="wrap">
-  <div class="eyebrow">01 · Confirmed</div>
-  <h2>확정 사항과 영상 반영 방향</h2>
-  <p class="lead">원장님 회신과 브랜드 가이드북 <b>Ver 1.4(11. 19 · 3차 피드백 · 컬러 시스템 통합안)</b>을 기준으로 영상 기획에 반영할 방향을 정리했습니다. 이전 버전(v1.1)과 달라진 부분은 <span class="tag new">v1.4 변경</span>으로 표시했습니다.</p>
+  <div class="eyebrow">01 · Overview</div>
+  <h2>제안 개요</h2>
+  <p class="lead">르니크 강남의 개원에 맞춰, 브랜드의 이름과 철학을 가장 먼저 전하는 브랜딩 영상을 제안합니다. 한 편의 마스터 필름에서 숏폼 · 광고 · 홈페이지 영상까지 이어지도록 설계해, 개원 초기의 <b>브랜드 인지</b>와 <b>상담 전환</b>을 함께 만듭니다.</p>
 
-  <div class="decision">
-    <div class="no">01</div>
-    <div>
-      <h3>브랜드명 RE;NIQUE 유지 <span class="tag ok">확정</span></h3>
-      <p>RE는 ‘리’로 읽히기 쉽지만, LE로 바꾸면 처음 의도한 의미와 브랜드 철학이 흔들립니다. 따라서 표기는 <b>RE;NIQUE</b>로 유지하고, 모든 매체에서 프랑스어 어원(Renouveau)을 함께 설명해 ‘르니크’로 읽히게 합니다. 이전 표기(RE:UNIQUE · LENIQUE · RE:NIQUE)는 쓰지 않습니다.</p>
-      <div class="apply"><b>영상 반영 →</b> 영상 전반부(약 14초)를 ‘이름 풀이’ 장면으로 구성합니다. <b>Renouveau[르누보] + Unique[위니크]</b>를 자막과 내레이션으로 차례로 보여 준 뒤 시그니처 로고로 이어 붙입니다. 내레이션이 “르니크”를 직접 발음해 <b>소리로 읽는 법을 각인</b>시킵니다.</div>
-    </div>
+  <div class="bg-row">
+    <div><div class="n">01</div><h4>낯선 이름, 분명한 의미</h4><p>RE;NIQUE는 프랑스어에서 온 이름입니다. ‘르니크’로 정확히 읽히고, 그 뜻이 기억되는 것이 브랜드 인지의 출발점입니다.</p></div>
+    <div><div class="n">02</div><h4>비슷한 약속 속의 차별화</h4><p>강남의 피부 미용 시장은 시술과 가격으로 비슷한 말을 합니다. 르니크는 ‘무엇을 하느냐’보다 ‘한 사람을 어떤 기준으로 보느냐’로 다르게 기억되어야 합니다.</p></div>
+    <div><div class="n">03</div><h4>네트워크의 첫 기준</h4><p>MSO 네트워크의 1호점으로서, 이후 지점에서도 그대로 쓸 수 있는 영상 자산과 표현 기준이 필요합니다.</p></div>
   </div>
 
-  <div class="decision">
-    <div class="no">02</div>
-    <div>
-      <h3>진료 카테고리 4구조 · LIGNE · VELOUTÉ · ÉCLAT · PURETÉ <span class="tag new">v1.4 변경</span></h3>
-      <p>3차 피드백(11. 19)에 따라 <s>REBUILD · REFINE · REVIVE(결·선·톤)</s> 3구조에서 프랑스어 네 카테고리로 바뀌었습니다. RE;NIQUE의 RE;와 발음이 겹치지 않도록 이름과 같은 프랑스어로 지었고, 국문은 <b>선명하게 · 균일하게 · 화사하게 · 깨끗하게</b>로 병기합니다. 이전 결정과 달리 <b>제모는 PURETÉ 카테고리에 포함</b>됩니다.</p>
-      <div class="apply"><b>영상 반영 →</b> 메인 필름 중심부(18초)를 <b>4챕터</b>로 다시 나눕니다. LIGNE(얼굴을 따라 흐르는 선) → VELOUTÉ(고른 바탕의 결) → ÉCLAT(번지는 빛) → PURETÉ(섬세하게 덜어내 드러나는 맑은 표면). 카테고리 숏폼도 3편에서 <b>4편</b>으로 늘어납니다.</div>
+  <div class="grid g2">
+    <div class="card">
+      <div class="k">Objective</div><h3>제작 목표</h3>
+      <ul>
+        <li>개원 전 ‘RE;NIQUE = 르니크’ 브랜드 인지와 발음 정착</li>
+        <li><b>LIGNE · VELOUTÉ · ÉCLAT · PURETÉ로 피부를 다루는 강남의 뷰티 클리닉</b>으로 포지셔닝</li>
+        <li>홈페이지 · SNS · 인플루언서 콘텐츠 톤의 기준이 되는 마스터 필름 확보</li>
+        <li>지점이 늘어도 그대로 쓰는 공용 영상 템플릿 구축</li>
+      </ul>
     </div>
-  </div>
-
-  <div class="decision">
-    <div class="no">03</div>
-    <div>
-      <h3>퍼스널 브랜딩 · 박원장 온다 / 전원장 SMP·문신제거 <span class="tag hold">조건부</span></h3>
-      <p>기기 도입 여부에 따라 바뀔 수 있어 아직 확정되지 않은 상태입니다. v1.4 기준으로 온다는 LIGNE, 문신제거는 PURETÉ의 주요 시술에 들어갑니다.</p>
-      <div class="apply"><b>영상 반영 →</b> 메인 필름의 의료진 컷은 <b>시술명을 넣지 않은 ‘철학·태도’ 중심</b>으로 촬영합니다. 원장별 전문 분야는 <b>별도 퍼스널 숏폼(각 30″)</b>으로 분리하고, 각 원장 숏폼의 엔딩에서 해당 카테고리(LIGNE / PURETÉ) 숏폼으로 연결합니다.</div>
+    <div class="card">
+      <div class="k">Target</div><h3>핵심 타깃</h3>
+      <ul>
+        <li>강남 오피스 상권의 <b>직장인 여성</b></li>
+        <li>피부 관리 · 제모에 관심 있는 <b>남성 고객</b></li>
+        <li>강남을 찾는 <b>외국인 고객</b> (영문 자막 버전)</li>
+        <li>점심 · 퇴근 시간대의 짧은 방문을 원하는 직장인</li>
+      </ul>
     </div>
-  </div>
-
-  <div class="decision">
-    <div class="no">04</div>
-    <div>
-      <h3>카테고리별 주요 시술 <span class="tag new">v1.4 변경</span></h3>
-      <p><b>LIGNE</b> 온다 · 슈링크 유니버스 · 볼뉴머 · 인모드 · 리핏리프팅 · 바디온다 / <b>VELOUTÉ</b> 포텐자 · 피코프락셀 · 어븀프락셀 · 골드 PTT · 쥬베룩 · 리제너 PN / <b>ÉCLAT</b> 레이저 토닝 · 제네시스 토닝 · 피코 토닝 · 흑자 레이저 / <b>PURETÉ</b> 여성제모 · 남성제모 · 디자인제모 · 편평사마귀 · 문신제거</p>
-      <div class="apply"><b>영상 반영 →</b> 시술 구성이 바뀌어도 영상 수명이 줄지 않도록 메인 필름에서는 <b>기기 로고·모델명을 노출하지 않고</b>, 핸드피스·빛·손의 디테일 컷으로 정밀함을 표현합니다. 가이드북의 ‘정교함(기기·샷 수·회복 기간을 명확히 설명)’은 숏폼 캡션과 홈페이지 시술 페이지에서 다룹니다. <b>※ 시술별 시행 범위와 광고 가능 여부는 사전 검토가 필요합니다(09 참조).</b></div>
+    <div class="card">
+      <div class="k">Channel</div><h3>활용 채널</h3>
+      <ul>
+        <li>홈페이지 메인 히어로 (무음 루프)</li>
+        <li>인스타그램 릴스 · 유튜브 쇼츠 · 유튜브 채널 (#renique)</li>
+        <li>대기 라운지 디스플레이</li>
+        <li>개원 티저 · 온라인 광고 소재 · 인플루언서 협업 레퍼런스</li>
+      </ul>
     </div>
-  </div>
-
-  <div class="decision">
-    <div class="no">05</div>
-    <div>
-      <h3>브랜드 가이드북 Ver 1.4 적용 <span class="tag new">v1.4 변경</span></h3>
-      <p>(주)메디앤메디 가이드북 v1.4의 확정 로고(11. 18)·통합 컬러 시스템·서체·명칭 규정을 영상과 이 문서에 그대로 적용합니다.</p>
-      <div class="rules">
-        <div><b>Color</b>에스프레소 #28211D · 시그니처 오렌지 #E86E26 · 화이트가 중심입니다. 잉크·피치·앰버·웜 그레이·샌드는 폐기됐고, <b>크림은 어두운 바탕 위 글자에만</b> 씁니다. 영상·홈페이지·사인은 에스프레소 60 · 화이트 30 · 오렌지 10, 서류는 화이트 60 · 에스프레소 30 · 오렌지 10.</div>
-        <div><b>Logo</b>확정본 벡터의 다섯 가지 버전만 씁니다. 01 오렌지 면 위 화이트(기본) · 02 오렌지 단색 · 03 에스프레소 단색 · 04 투톤(에스프레소 + 오렌지 세미콜론, 화이트 바탕 전용) · 05 반전 화이트(에스프레소 바탕). <b>세미콜론만 떼어 단독 마크로 쓰지 않습니다.</b></div>
-        <div><b>Naming</b>국문은 ‘르니크’(지점은 ‘르니크 강남’). ‘르니크한의원’은 의료광고 명칭란 등 법정 표기 접점에만 쓰고, 자막·내레이션에서 ‘한의원’을 따로 언급하지 않습니다.</div>
-        <div><b>Type</b>영문·카테고리명 Cormorant Garamond(악상 É 유지, 대문자), 국문 문장 마루 부리(대체 Noto Serif KR), 정보·UI는 Pretendard. 한 화면 3종 이내.</div>
-      </div>
-      <div class="apply"><b>영상 반영 →</b> 영상의 그래픽 바탕은 <b>에스프레소</b>, 자막은 크림, 라벨은 시그니처 오렌지로 통일합니다. 사진 위 자막은 하단 에스프레소 그라데이션(0 → 88%) 위에 크림 글자로 올립니다. 엔드 카드는 기본형(<b>오렌지 면 + 화이트 시그니처</b>)에 법정 명칭 ‘르니크한의원’을 병기합니다. 세미콜론 단독 마크 금지에 따라 <b>오프닝은 세미콜론 오브제 대신 ‘끝나지 않고 이어지는 오렌지 강조선’</b>으로 바꾸고, 세미콜론은 로고 안에서만 등장시킵니다.</div>
+    <div class="card">
+      <div class="k">KPI</div><h3>성과 지표</h3>
+      <ul>
+        <li>조회수 · 완주율 등 노출 지표</li>
+        <li>영상 → 홈페이지 · 상담 문의 전환 (UTM 추적)</li>
+        <li>개원 초기 3개월의 <b>상담 · 예약 전환과 매출 기여</b></li>
+      </ul>
     </div>
   </div>
 </div></section>
 
 <!-- 02 -->
 <section id="s2"><div class="wrap">
-  <div class="eyebrow">02 · Overview</div>
-  <h2>프로젝트 개요</h2>
-  <div class="grid g2">
-    <div class="card">
-      <div class="k">Purpose</div><h3>제작 목적</h3>
-      <ul>
-        <li>개원 전 ‘RE;NIQUE = 르니크’ 브랜드 인지와 발음 정착</li>
-        <li>업종이 아니라 <b>LIGNE · VELOUTÉ · ÉCLAT · PURETÉ로 피부를 다루는 강남의 뷰티 클리닉</b>으로 인식시키기</li>
-        <li>홈페이지·SNS·인플루언서 콘텐츠 톤의 기준점(마스터 필름) 확보</li>
-        <li>MSO 네트워크 확장 시 지점 공통으로 쓸 수 있는 브랜드 자산 구축</li>
-      </ul>
-    </div>
-    <div class="card">
-      <div class="k">Target</div><h3>핵심 타깃</h3>
-      <ul>
-        <li>강남 오피스 상권의 <b>직장인 여성</b> (메인)</li>
-        <li>피부 관리·제모에 관심 있는 <b>남성 고객</b> → 남성 모델 컷 포함</li>
-        <li><b>외국인 고객</b> → 영문 자막 버전 별도 제작</li>
-        <li>점심·퇴근 시간대의 짧은 방문을 원하는 바쁜 직장인</li>
-      </ul>
-    </div>
-    <div class="card">
-      <div class="k">Channel</div><h3>주요 활용처</h3>
-      <ul>
-        <li>홈페이지 메인 히어로 (무음 루프 · 에스프레소 바탕 시안과 연결)</li>
-        <li>인스타그램 릴스 · 유튜브 쇼츠 · 유튜브 채널 (#renique)</li>
-        <li>내원객 대기 라운지 디스플레이</li>
-        <li>개원 티저 · 온라인 광고 소재 · 인플루언서 협업 가이드 레퍼런스</li>
-      </ul>
-    </div>
-    <div class="card">
-      <div class="k">KPI</div><h3>성과 점검 기준</h3>
-      <ul>
-        <li>조회수·완주율 같은 노출 지표</li>
-        <li>영상 → 홈페이지·상담 문의 전환 (UTM 링크로 추적)</li>
-        <li>개원 초기 3개월의 <b>상담·예약 전환과 매출 기여</b>를 함께 점검</li>
-      </ul>
-    </div>
-  </div>
-</div></section>
-
-<!-- 03 -->
-<section id="s3"><div class="wrap">
-  <div class="eyebrow">03 · Creative Concept</div>
-  <h2>“ ; ” — 새로움과 고유함이 만나는 지점</h2>
-  <p class="lead">영상의 메시지는 이름 속 <b>세미콜론(;)</b>의 뜻에서 출발합니다. 문장을 끝내지 않고 이어 주는 부호처럼, 르니크는 고객을 다른 사람으로 ‘바꾸는’ 곳이 아니라 지금의 나에서 ‘다시 시작하게’ 하는 곳이며, 그 세미콜론은 <b>시술 뒤에도 이어지는 관리</b>를 뜻합니다. 화면에서는 세미콜론을 따로 떼어 쓰지 않고, ‘끝나지 않는 선’으로 은유한 뒤 로고 안에서만 보여 줍니다.</p>
+  <div class="eyebrow">02 · Brand</div>
+  <h2>브랜드 이해</h2>
+  <p class="lead">RE;NIQUE는 프랑스어 <b>Renouveau</b>(다시 찾아오는 봄, 새로움)와 <b>Unique</b>(세상에 단 하나뿐인, 고유함)를 세미콜론으로 이은 이름입니다. 세미콜론은 새로움과 고유함이 만나는 지점이자, 시술 뒤에도 이어지는 관리를 뜻합니다.</p>
 
   <div class="name">
     <div class="row">
@@ -329,25 +272,24 @@ footer img{width:150px;margin:0 auto 12px}
     </div>
     <img class="logo" src="assets/logo/renique_signature_twotone.svg" alt="RE;NIQUE CLINIC" width="1186" height="345">
     <div class="pron">르니크</div>
-    <div class="cap">04 투톤 시그니처 · 화이트 바탕 전용</div>
   </div>
 
-  <div class="grid g3" style="margin-top:40px">
-    <div class="card"><div class="k">Key Message</div><h3>다시, 나다운 특별함으로.</h3><p>브랜드 슬로건을 영상 엔딩 카피로 그대로 씁니다.</p></div>
-    <div class="card"><div class="k">Insight</div><h3>달라지고 싶지만, 다른 사람이 되고 싶지는 않습니다.</h3><p>가이드북 브랜드 스토리의 첫 문장. 고객의 이 마음에서 영상을 시작합니다.</p></div>
-    <div class="card"><div class="k">Philosophy</div><h3>지금 가장 필요한 하나부터</h3><p>피부의 상태를 먼저 세심하게 살피고, 지금 가장 필요한 하나부터 시작합니다. 과장된 전후 비교 대신 절제된 오브제와 빛으로 표현합니다.</p></div>
+  <div class="story">
+    <div class="q">달라지고 싶지만,<br>다른 사람이 되고 싶지는 않습니다.</div>
+    <p>우리는 아름다움을 새롭게 바라봅니다. 모두가 같은 모습이 되는 것이 아니라, 각자가 가진 고유한 아름다움에 집중합니다. 피부의 상태를 먼저 세심하게 살피고, 지금 가장 필요한 하나부터 시작합니다.<br><b>다시, 나다운 특별함을 찾는 것. 그것이 RE;NIQUE가 생각하는 아름다움입니다.</b></p>
   </div>
 
-  <h3 style="margin:56px 0 8px">브랜드 가치 → 영상 연출 원칙</h3>
-  <p style="color:var(--txt);margin-bottom:20px">가이드북의 네 가지 가치를 컷 설계 기준으로 옮겼습니다. v1.4에서 BALANCE(균형)가 <b>ORDER(순서)</b>로 바뀌었습니다.</p>
+  <h3 class="sub-h">브랜드 가치</h3>
+  <p class="sub-p">네 가지 가치를 영상의 장면 설계 기준으로 삼습니다.</p>
   <div class="grid g4">
-    <div class="val"><div class="en">UNIQUE</div><h4>고유함</h4><p>아름다움을 하나의 모습으로 정하지 않습니다.</p><div class="film"><b>연출</b> 비슷한 실루엣 속 한 사람에게만 빛이 닿는 오프닝</div></div>
-    <div class="val"><div class="en">PRECISE</div><h4>정교함</h4><p>기기·샷 수·회복 기간을 명확하게 설명합니다.</p><div class="film"><b>연출</b> 손·진단지 디테일 컷, 숏폼 캡션에 시술 정보 명시</div></div>
-    <div class="val"><div class="en">ORDER</div><h4>순서</h4><p>네 카테고리 가운데 지금 무엇이 먼저인지부터 정합니다.</p><div class="film"><b>연출</b> 상담 컷에 “지금 가장 필요한 하나부터 시작합니다.”</div></div>
-    <div class="val"><div class="en">CONSISTENT</div><h4>일관성</h4><p>지점이 늘어도 기준을 이어갑니다.</p><div class="film"><b>연출</b> 로고 범퍼·엔드 카드를 전 지점 공용 템플릿으로 제작</div></div>
+    <div class="val"><div class="en">UNIQUE</div><h4>고유함</h4><p>아름다움을 하나의 모습으로 정하지 않습니다.</p><div class="film"><b>영상</b> 비슷한 실루엣 속 한 사람에게만 빛이 닿는 오프닝</div></div>
+    <div class="val"><div class="en">PRECISE</div><h4>정교함</h4><p>기기 · 샷 수 · 회복 기간을 명확하게 설명합니다.</p><div class="film"><b>영상</b> 손과 진단지의 디테일 컷, 숏폼 캡션의 시술 정보</div></div>
+    <div class="val"><div class="en">ORDER</div><h4>순서</h4><p>지금 무엇이 먼저인지부터 정합니다.</p><div class="film"><b>영상</b> 상담 장면의 “지금 가장 필요한 하나부터 시작합니다.”</div></div>
+    <div class="val"><div class="en">CONSISTENT</div><h4>일관성</h4><p>지점이 늘어도 기준을 이어갑니다.</p><div class="film"><b>영상</b> 전 지점 공용 로고 범퍼 · 엔드 카드</div></div>
   </div>
 
-  <h3 style="margin:56px 0 20px">네 가지 방향, 하나의 철학</h3>
+  <h3 class="sub-h">네 가지 방향, 하나의 철학</h3>
+  <p class="sub-p">르니크의 진료는 네 가지 카테고리로 구성됩니다. 영상에서는 카테고리마다 하나의 오브제와 피부 장면을 짝지어 보여 줍니다.</p>
   <div class="grid g4">
     <div class="cat"><div class="vis"><svg viewBox="0 0 300 140" preserveAspectRatio="none" style="width:100%;height:100%"><path d="M-10 115 C 80 125, 120 35, 200 45 S 290 10, 320 18" fill="none" stroke="#28211D" stroke-width="1.6"/><path d="M-10 128 C 90 134, 130 55, 210 61 S 290 28, 320 36" fill="none" stroke="#E86E26" stroke-width="1.2"/></svg></div><div class="body"><div class="no">I</div><div class="en">LIGNE</div><div class="kr">선명하게</div><q>“나다운 선을 아름답게 완성하다.”</q><div class="items"><b>리프팅 · 윤곽 · 탄력 · 다이어트</b>온다 · 슈링크 유니버스 · 볼뉴머 · 인모드 · 리핏리프팅 · 바디온다<br>오브제: 얼굴 윤곽을 따라 흐르는 선</div></div></div>
     <div class="cat"><div class="vis v-velo"></div><div class="body"><div class="no">II</div><div class="en">VELOUTÉ</div><div class="kr">균일하게</div><q>“피부의 바탕을 고르게 가꾸다.”</q><div class="items"><b>여드름 · 흉터 · 모공 · 스킨부스터</b>포텐자 · 피코프락셀 · 어븀프락셀 · 골드 PTT · 쥬베룩 · 리제너 PN<br>오브제: 고르게 쌓인 자연석의 결</div></div></div>
@@ -360,58 +302,79 @@ footer img{width:150px;margin:0 auto 12px}
   </div>
 </div></section>
 
+<!-- 03 -->
+<section id="s3"><div class="wrap">
+  <div class="eyebrow">03 · Creative Concept</div>
+  <h2>“ ; ” — 새로움과 고유함이 만나는 지점</h2>
+  <p class="lead">세미콜론은 문장을 끝내지 않고 다음으로 이어 주는 부호입니다. 르니크는 고객을 다른 사람으로 바꾸는 곳이 아니라, <b>지금의 나에서 다시 시작하게 하는 곳</b>입니다. 영상은 ‘끝나지 않고 이어지는 선’으로 시작해, 그 선이 이름과 철학을 지나 한 사람의 얼굴에 닿는 흐름으로 이 메시지를 전합니다.</p>
+
+  <div class="grid g3">
+    <div class="card"><div class="k">Key Message</div><h3>다시, 나다운 특별함으로.</h3><p>브랜드 슬로건을 영상의 마지막 문장으로 씁니다.</p></div>
+    <div class="card"><div class="k">Insight</div><h3>달라지고 싶지만, 다른 사람이 되고 싶지는 않습니다.</h3><p>고객이 피부 미용을 고민할 때 가장 먼저 떠올리는 마음에서 영상을 시작합니다.</p></div>
+    <div class="card"><div class="k">Philosophy</div><h3>지금 가장 필요한 하나부터</h3><p>더하는 것만이 아름다움은 아닙니다. 과장된 전후 비교 대신 절제된 오브제와 빛으로 ‘본연’을 표현합니다.</p></div>
+  </div>
+
+  <h3 class="sub-h">크리에이티브 장치</h3>
+  <div class="grid g3" style="margin-top:20px">
+    <div class="card"><div class="k">Line</div><h3>끝나지 않는 선</h3><p>오프닝의 오렌지 선이 이름, 네 카테고리, 엔드 카드의 오렌지 면으로 이어집니다. 세미콜론의 ‘이어짐’을 화면 전체의 흐름으로 바꾼 장치입니다.</p></div>
+    <div class="card"><div class="k">Match Cut</div><h3>오브제 → 피부</h3><p>선 · 자연석 · 빛 · 걷히는 입자. 네 가지 오브제를 같은 구도와 같은 빛으로 피부 장면에 이어, 시술명을 말하지 않고도 카테고리의 의미를 보여 줍니다.</p></div>
+    <div class="card"><div class="k">Pronunciation</div><h3>소리로 읽는 이름</h3><p>르누보 · 위니크 · 르니크. 내레이션이 이름을 직접 발음하고, 로고가 완성되는 순간 ‘르니크’를 자막으로 함께 보여 줍니다.</p></div>
+  </div>
+</div></section>
+
 <!-- 04 -->
 <section id="s4"><div class="wrap">
   <div class="eyebrow">04 · Structure</div>
-  <h2>메인 브랜드 필름 구성 (60″)</h2>
-  <p class="lead">6개 시퀀스, 총 15컷으로 구성합니다(4카테고리 반영으로 1컷 추가). 컷별 상세는 별도 <b>스토리보드</b> 문서를 참고해 주세요.</p>
+  <h2>영상 구성 — 메인 브랜드 필름 60″</h2>
+  <p class="lead">여섯 개의 시퀀스, 15컷으로 구성합니다. 컷별 상세는 <b>스토리보드</b>에서 확인하실 수 있습니다.</p>
   <div class="flow">
     <div><div class="t">00–08″</div><h4>Opening</h4><p>끝나지 않는 오렌지 선 → “달라지고 싶지만, 다른 사람이 되고 싶지는 않습니다.”</p></div>
-    <div><div class="t">08–22″</div><h4>Name</h4><p>Renouveau + Unique → RE;NIQUE. ‘르니크’ 발음을 각인</p></div>
+    <div><div class="t">08–22″</div><h4>Name</h4><p>Renouveau + Unique → RE;NIQUE. ‘르니크’로 읽히는 이름</p></div>
     <div><div class="t">22–26″</div><h4>Philosophy</h4><p>“아름다움은 더하는 데서만 완성되지 않습니다.”</p></div>
     <div><div class="t">26–44″</div><h4>4 Directions</h4><p>LIGNE · VELOUTÉ · ÉCLAT · PURETÉ. 오브제 → 피부 매치컷</p></div>
-    <div><div class="t">44–54″</div><h4>Clinic</h4><p>라운지 · 1인 시술실 · 진료실. 지금 가장 필요한 하나부터</p></div>
-    <div><div class="t">54–60″</div><h4>Ending</h4><p>“다시, 나다운 특별함으로.” 오렌지 면 + 시그니처 + 법정 명칭</p></div>
+    <div><div class="t">44–54″</div><h4>Clinic</h4><p>라운지 · 상담실 · 진료실. 지금 가장 필요한 하나부터</p></div>
+    <div><div class="t">54–60″</div><h4>Ending</h4><p>“다시, 나다운 특별함으로.” 오렌지 면 위 시그니처</p></div>
   </div>
   <div class="bar"><i style="width:13.3%;background:#28211D"></i><i style="width:23.3%;background:#6B5F57"></i><i style="width:6.7%;background:#A39A92"></i><i style="width:30%;background:#E86E26"></i><i style="width:16.7%;background:#CC4A08"></i><i style="width:10%;background:#28211D"></i></div>
 
-  <h3 style="margin:56px 0 16px">내레이션 스크립트 (초안)</h3>
+  <h3 class="sub-h" style="margin-bottom:16px">내레이션</h3>
   <div class="card script">
     달라지고 싶지만, 다른 사람이 되고 싶지는 않습니다.<br>
     <em>르누보</em>, 다시 찾아오는 봄.<br>
     <em>위니크</em>, 세상에 단 하나뿐인 고유함.<br>
     새로움과 고유함이 만나는 곳, <b>르니크.</b><br>
     아름다움은, 무언가를 더하는 데서만 완성되지 않습니다.<br>
-    <span class="new">선명하게, 균일하게, 화사하게, 깨끗하게.</span><br>
-    <span class="new">네 가지 방향, 하나의 철학.</span><br>
-    <span class="new">지금 가장 필요한 하나부터 시작합니다.</span><br>
+    선명하게, 균일하게, 화사하게, 깨끗하게.<br>
+    네 가지 방향, 하나의 철학.<br>
+    지금 가장 필요한 하나부터 시작합니다.<br>
     다시, 나다운 특별함으로. <b>르니크.</b>
-    <p style="font-family:var(--sans);font-size:12px;color:var(--mocha);margin-top:16px;line-height:1.6">※ 형광 표시한 문장은 가이드북 v1.4 반영으로 바뀐 부분입니다(결·선·톤 → 네 카테고리 국문 병기, BALANCE → ORDER). 약 150자 · 차분한 30대 여성 보이스 기준 약 42초 분량(무음 구간 포함 60초). 내레이션에서는 ‘르니크’만 부르고, 법정 명칭은 엔드 카드에 표기합니다. 영문 버전은 Renouveau / Unique와 네 카테고리명을 프랑스어로 발음합니다.</p>
+    <p style="font-family:var(--sans);font-size:12px;color:var(--mocha);margin-top:16px;line-height:1.6">약 150자 · 차분한 30대 여성 보이스 기준 약 42초(무음 구간 포함 60초). 영문 버전은 Renouveau · Unique와 네 카테고리명을 프랑스어로 발음합니다.</p>
   </div>
 </div></section>
 
 <!-- 05 -->
 <section id="s5"><div class="wrap">
-  <div class="eyebrow">05 · Tone &amp; Manner</div>
-  <h2>톤앤매너</h2>
-  <p class="lead">가이드북 v1.4는 홈페이지 메인 시안과 인테리어 톤에서 뽑은 <b>에스프레소 · 오렌지 · 화이트</b> 팔레트 하나를 홈페이지 · 인쇄물 · 사인 · 영상에 함께 씁니다. 영상은 에스프레소 바탕 매체입니다.</p>
+  <div class="eyebrow">05 · Visual Guide</div>
+  <h2>비주얼 가이드</h2>
+  <p class="lead">르니크 브랜드 가이드의 컬러 · 서체 · 로고 기준을 영상에 그대로 적용해, 간판에서 썸네일까지 같은 얼굴로 보이게 합니다. 영상은 <b>에스프레소 바탕</b>을 기본으로 합니다.</p>
   <div class="grid g4" style="margin-bottom:8px">
-    <div class="sw"><i style="background:#28211D;color:#F5EBE0">크림 글자</i><span><b>Espresso · 에스프레소</b>#28211D · 로고·글자·영상 바탕</span></div>
-    <div class="sw"><i style="background:#E86E26"></i><span><b>Signature Orange</b>#E86E26 · 로고 면·강조선·어두운 바탕 라벨</span></div>
-    <div class="sw"><i style="background:#CC4A08"></i><span><b>Deep Orange · 딥 오렌지</b>#CC4A08 · 버튼·가격·밝은 바탕 오렌지 글자</span></div>
-    <div class="sw"><i style="background:#FFFFFF;border-bottom:1px solid #E7E2DD"></i><span><b>White · 화이트</b>#FFFFFF · 밝은 바탕·서류</span></div>
-    <div class="sw"><i style="background:#28211D;color:#F5EBE0;font-size:15px">Cream #F5EBE0</i><span><b>Cream · 크림</b>어두운 바탕 위 글자 전용 · 바탕 면 사용 금지</span></div>
-    <div class="sw"><i style="background:#6B5F57"></i><span><b>Mocha · 모카</b>#6B5F57 · 밝은 바탕 보조 글</span></div>
-    <div class="sw"><i style="background:#A39A92"></i><span><b>Taupe · 토프</b>#A39A92 · 어두운 바탕 보조 글</span></div>
-    <div class="sw"><i style="background:#F5F3F0;border-bottom:1px solid #E7E2DD"></i><span><b>Mist · 미스트</b>#F5F3F0 · 밝은 바탕 구분 면</span></div>
+    <div class="sw"><i style="background:#28211D;color:#F5EBE0">크림 글자</i><span><b>Espresso</b>#28211D · 로고 · 글자 · 영상 바탕</span></div>
+    <div class="sw"><i style="background:#E86E26"></i><span><b>Signature Orange</b>#E86E26 · 로고 면 · 강조선 · 라벨</span></div>
+    <div class="sw"><i style="background:#CC4A08"></i><span><b>Deep Orange</b>#CC4A08 · 버튼 · 가격 · 밝은 바탕의 오렌지 글자</span></div>
+    <div class="sw"><i style="background:#FFFFFF;border-bottom:1px solid #E7E2DD"></i><span><b>White</b>#FFFFFF · 밝은 바탕 · 서류</span></div>
+    <div class="sw"><i style="background:#28211D;color:#F5EBE0;font-size:15px">Cream #F5EBE0</i><span><b>Cream</b>어두운 바탕 위 글자</span></div>
+    <div class="sw"><i style="background:#6B5F57"></i><span><b>Mocha</b>#6B5F57 · 밝은 바탕 보조 글</span></div>
+    <div class="sw"><i style="background:#A39A92"></i><span><b>Taupe</b>#A39A92 · 어두운 바탕 보조 글</span></div>
+    <div class="sw"><i style="background:#F5F3F0;border-bottom:1px solid #E7E2DD"></i><span><b>Mist</b>#F5F3F0 · 밝은 바탕 구분 면</span></div>
   </div>
-  <div class="ratio"><div style="width:60%;background:#28211D;color:#F5EBE0">영상 · 홈페이지 · 사인 — ESPRESSO 60</div><div style="width:30%;background:#fff;border:1px solid #E7E2DD;color:#6B5F57">WHITE 30</div><div style="width:10%;background:#E86E26;color:#fff">10</div></div>
-  <p class="small" style="margin-bottom:20px">서류 · 안내문(이 기획안 같은 문서)은 화이트 60 · 에스프레소 30 · 오렌지 10으로 뒤집어 씁니다. 한 화면의 바탕은 하나만 정하고, 남색·녹색 계열과 팔레트 밖의 색은 쓰지 않습니다.</p>
-  <div class="grad" style="margin-bottom:40px">Signature Gradient 135° · Orange → Deep — 커버 · 사인 · 영상 전용</div>
-  <div class="grid g3">
-    <div class="card"><div class="k">Visual</div><h3>영상미</h3><ul><li>그래픽·타이틀 바탕은 에스프레소, 자막은 크림, 라벨은 오렌지</li><li>컬러그레이딩: 따뜻한 에스프레소 섀도 · 깨끗한 화이트 하이라이트, 채도 낮게</li><li><b>남색·녹색 톤 지양</b>, 오렌지는 엔드 카드 면·강조선에만</li><li>16:9 메인 / 9:16 숏폼 동시 촬영 (6K 크롭 여유)</li></ul></div>
-    <div class="card"><div class="k">Motion</div><h3>카메라 · 편집</h3><ul><li>슬라이더·짐벌을 이용한 느린 무빙, 하이스피드 120fps 일부</li><li>오브제 ↔ 피부 <b>매치컷</b>이 핵심 기법</li><li>화이트 플래시·글리치 등 자극적인 전환 배제</li><li>로고 모션은 확정 벡터로만 제작, 그림자·광택 효과 금지</li></ul></div>
-    <div class="card"><div class="k">Typo &amp; Sound</div><h3>타이포 · 사운드</h3><ul><li>영문·카테고리명 Cormorant Garamond / 국문 문장 마루 부리 / 정보 Pretendard</li><li>사진 위 자막: 하단 에스프레소 그라데이션(0 → 88%) + 크림 글자</li><li>음악: 미니멀 피아노 + 앰비언트 패드 (라이선스 음원 3곡 제안 예정)</li><li>내레이션: 낮고 차분한 여성 보이스, 국문·영문 2종</li></ul></div>
+  <div class="ratio"><div style="width:60%;background:#28211D;color:#F5EBE0">ESPRESSO 60</div><div style="width:30%;background:#fff;border:1px solid #E7E2DD;color:#6B5F57">WHITE 30</div><div style="width:10%;background:#E86E26;color:#fff">10</div></div>
+  <p class="small" style="margin-bottom:20px">영상 · 홈페이지 · 사인의 컬러 비율입니다. 한 화면의 바탕은 에스프레소나 화이트 중 하나로 정합니다.</p>
+  <div class="grad" style="margin-bottom:40px">Signature Gradient 135° · Orange → Deep — 커버 · 사인 · 영상</div>
+  <div class="grid g2">
+    <div class="card"><div class="k">Visual</div><h3>영상미</h3><ul><li>그래픽 · 타이틀 바탕은 에스프레소, 자막은 크림, 라벨은 오렌지</li><li>따뜻한 에스프레소 섀도와 깨끗한 화이트 하이라이트, 낮은 채도</li><li>오렌지는 엔드 카드 면과 강조선에만 사용</li><li>16:9 메인 · 9:16 숏폼 동시 촬영 (6K 크롭 여유)</li></ul></div>
+    <div class="card"><div class="k">Motion</div><h3>카메라 · 편집</h3><ul><li>슬라이더 · 짐벌의 느린 무빙, 하이스피드 120fps 일부</li><li>오브제 ↔ 피부 <b>매치컷</b> 중심의 편집</li><li>플래시 · 글리치 등 자극적인 전환 배제</li><li>평균 컷 길이 3–5초</li></ul></div>
+    <div class="card"><div class="k">Typo &amp; Sound</div><h3>타이포 · 사운드</h3><ul><li>영문 · 카테고리명 Cormorant Garamond / 국문 문장 마루 부리 / 정보 Pretendard</li><li>사진 위 자막은 하단 에스프레소 그라데이션 위에 크림 글자</li><li>미니멀 피아노 + 앰비언트 패드 (라이선스 음원 3곡 제안)</li><li>낮고 차분한 여성 내레이션, 국문 · 영문 2종</li></ul></div>
+    <div class="card"><div class="k">Logo &amp; Name</div><h3>로고 · 명칭</h3><ul><li>엔드 카드: 오렌지 면 + 화이트 시그니처 + 법정 명칭 ‘르니크한의원’</li><li>에스프레소 바탕에는 화이트 로고, 밝은 바탕에는 에스프레소 · 투톤 로고</li><li>세미콜론은 로고 안에서만 보여 주고, 원본 벡터 그대로 사용</li><li>자막 · 내레이션의 브랜드명은 ‘르니크’로 통일</li></ul></div>
   </div>
 </div></section>
 
@@ -419,16 +382,16 @@ footer img{width:150px;margin:0 auto 12px}
 <section id="s6"><div class="wrap">
   <div class="eyebrow">06 · Line-up</div>
   <h2>제작 라인업</h2>
-  <p class="lead">한 번의 촬영으로 여러 버전을 만들어 월 마케팅 예산 안에서 소재 효율을 높입니다.</p>
+  <p class="lead">한 번의 촬영으로 여섯 가지 버전을 만들어, 월 마케팅 예산 안에서 소재 효율을 높입니다.</p>
   <div class="scroll"><table class="tbl">
     <thead><tr><th>구분</th><th>길이 · 비율</th><th>내용</th><th>활용</th><th>비고</th></tr></thead>
     <tbody>
       <tr><td>A. 메인 브랜드 필름</td><td>60″ · 16:9</td><td>콘셉트 전체를 담은 마스터 영상</td><td>유튜브, 홈페이지, 대기 라운지</td><td>국문 / 영문 자막</td></tr>
-      <tr><td>B. 컷다운</td><td>30″ · 16:9, 1:1</td><td>Name + 4 Directions + Ending</td><td>온라인 광고, 개원 티저</td><td>내레이션 축약본</td></tr>
-      <tr><td>C. 카테고리 숏폼 ×4</td><td>15″ · 9:16</td><td>LIGNE / VELOUTÉ / ÉCLAT / PURETÉ</td><td>릴스, 쇼츠, 광고 소재</td><td><span class="tag new">v1.4 · 3 → 4편</span></td></tr>
-      <tr><td>D. 원장 퍼스널 숏폼 ×2</td><td>30″ · 9:16</td><td>원장별 철학과 전문 분야 인터뷰</td><td>릴스, 의료진 소개 페이지</td><td><span class="tag hold">분야 확정 후</span></td></tr>
-      <tr><td>E. 홈페이지 루프</td><td>20″ · 16:9 / 9:16</td><td>무음 오브제 · 공간 컷 반복</td><td>홈페이지 히어로 (에스프레소 바탕)</td><td>용량 최적화본</td></tr>
-      <tr><td>F. 로고 범퍼</td><td>6″ · 전 비율</td><td>오렌지 강조선 → 시그니처 로고</td><td>모든 콘텐츠 인트로·아웃트로</td><td>지점 확장 시 공용 템플릿</td></tr>
+      <tr><td>B. 컷다운</td><td>30″ · 16:9, 1:1</td><td>Name + 4 Directions + Ending</td><td>온라인 광고, 개원 티저</td><td>개원 안내 카드 포함</td></tr>
+      <tr><td>C. 카테고리 숏폼 ×4</td><td>15″ · 9:16</td><td>LIGNE / VELOUTÉ / ÉCLAT / PURETÉ</td><td>릴스, 쇼츠, 광고 소재</td><td>시술 정보는 캡션으로 안내</td></tr>
+      <tr><td>D. 원장 퍼스널 숏폼 ×2</td><td>30″ · 9:16</td><td>원장별 철학과 전문 분야 인터뷰</td><td>릴스, 의료진 소개 페이지</td><td><span class="tag">전문 분야 확정 후 제작</span></td></tr>
+      <tr><td>E. 홈페이지 루프</td><td>20″ · 16:9 / 9:16</td><td>무음 오브제 · 공간 컷 반복</td><td>홈페이지 메인 히어로</td><td>용량 최적화본</td></tr>
+      <tr><td>F. 로고 범퍼</td><td>6″ · 전 비율</td><td>오렌지 선 → 시그니처 로고</td><td>모든 콘텐츠의 인트로 · 아웃트로</td><td>전 지점 공용</td></tr>
     </tbody>
   </table></div>
 </div></section>
@@ -436,74 +399,77 @@ footer img{width:150px;margin:0 auto 12px}
 <!-- 07 -->
 <section id="s7"><div class="wrap">
   <div class="eyebrow">07 · Production</div>
-  <h2>촬영 계획</h2>
+  <h2>제작 계획</h2>
   <div class="grid g2">
-    <div class="card"><div class="k">Day 1 · Studio</div><h3>오브제 · 모델 스튜디오 촬영</h3><ul><li>LIGNE 선 · VELOUTÉ 자연석 · ÉCLAT 유리·물·빛 · <b>PURETÉ 고운 입자가 걷히는 매끈한 표면</b></li><li>모델 뷰티 클로즈업: 여성 1, 남성 1 (내추럴 메이크업)</li><li>PURETÉ용 팔·다리 등 매끈한 바디 피부 디테일 컷</li><li>9:16 동시 프레이밍</li></ul></div>
-    <div class="card"><div class="k">Day 2 · Clinic</div><h3>병원 공간 · 의료진 촬영</h3><ul><li>준공 후 촬영 · 인테리어 제안서의 대기 라운지 · 계단실 대기 공간 · 이미지월·상담실 · 독립된 1인 시술실 · 대표원장 진료실 기준</li><li>기기는 로고 없이 디테일만</li><li>원장 2인 포트레이트 + 퍼스널 숏폼 인터뷰</li><li>상담 연출 장면 (모델 출연, 실제 환자 아님 명시)</li></ul></div>
-    <div class="card"><div class="k">Cast</div><h3>캐스팅</h3><ul><li>20대 후반–30대 오피스룩 여성 모델 1</li><li>30대 남성 모델 1</li><li>외국인 모델 1 (선택, 영문 버전 강화용)</li><li>내레이터: 국문 1 / 영문 1</li></ul></div>
-    <div class="card"><div class="k">Staff</div><h3>제작 인력</h3><ul><li>감독 · 촬영감독 · 조명감독</li><li>스타일리스트 · 헤어메이크업</li><li>편집 · 컬러그레이딩 · 모션그래픽(로고)</li><li>사운드 믹싱 · 내레이션 녹음</li></ul></div>
+    <div class="card"><div class="k">Day 1 · Studio</div><h3>오브제 · 모델 스튜디오 촬영</h3><ul><li>네 카테고리 오브제: 선 · 자연석 · 유리와 빛 · 걷히는 고운 입자</li><li>모델 뷰티 클로즈업: 여성 1, 남성 1 (내추럴 메이크업)</li><li>PURETÉ용 어깨 · 팔 라인 피부 디테일</li><li>16:9 · 9:16 동시 프레이밍</li></ul></div>
+    <div class="card"><div class="k">Day 2 · Clinic</div><h3>공간 · 의료진 촬영</h3><ul><li>대기 라운지 · 계단실 대기 공간 · 상담실 · 1인 시술실 · 대표원장 진료실</li><li>기기는 로고 없이 핸드피스 · 빛 · 손의 디테일로</li><li>원장 2인 포트레이트와 퍼스널 숏폼 인터뷰</li><li>상담 장면은 모델이 출연하는 연출 장면</li></ul></div>
+    <div class="card"><div class="k">Cast</div><h3>캐스팅</h3><ul><li>20대 후반–30대 오피스룩 여성 모델 1</li><li>30대 남성 모델 1</li><li>외국인 모델 1 (선택 · 영문 버전용)</li><li>내레이터 국문 1 · 영문 1</li></ul></div>
+    <div class="card"><div class="k">Staff</div><h3>제작 인력</h3><ul><li>감독 · 촬영감독 · 조명감독</li><li>스타일리스트 · 헤어메이크업</li><li>편집 · 컬러그레이딩 · 모션그래픽</li><li>사운드 믹싱 · 내레이션 녹음</li></ul></div>
   </div>
 </div></section>
 
 <!-- 08 -->
 <section id="s8"><div class="wrap">
   <div class="eyebrow">08 · Schedule</div>
-  <h2>제작 일정 (안)</h2>
-  <p class="lead">2027년 1월 개원 기준, 개원 2주 전 티저 공개를 목표로 역산했습니다. 가이드북 v1.4 반영으로 컨펌 일정을 다시 잡았고, 병원 공간 촬영일은 준공 일정에 맞춰 조정합니다.</p>
+  <h2>추진 일정</h2>
+  <p class="lead">2027년 1월 개원에 맞춰, 개원 2주 전 티저 공개를 목표로 진행합니다. 병원 촬영은 준공 일정에 맞춰 확정합니다.</p>
   <div class="grid g2">
     <div class="tl">
-      <div class="s key"><div class="d">11.24 – 11.26</div><h4>기획안 · 스토리보드 재컨펌</h4><p>가이드북 v1.4(4카테고리 · 통합 컬러) 반영본 확인</p></div>
-      <div class="s"><div class="d">11.24 – 11.28</div><h4>프리 프로덕션</h4><p>캐스팅, 로케이션·오브제 준비, PURETÉ 컷 레퍼런스 확정, 음원 후보 선정, 의료광고 검토 요청</p></div>
+      <div class="s key"><div class="d">11.24 – 11.26</div><h4>기획안 · 스토리보드 확정</h4><p>콘셉트, 내레이션, 라인업 확정</p></div>
+      <div class="s"><div class="d">11.24 – 11.28</div><h4>프리 프로덕션</h4><p>캐스팅, 로케이션 · 오브제 준비, 음원 선정, 의료광고 검토 요청</p></div>
       <div class="s key"><div class="d">12.01 – 12.05</div><h4>Day 1 스튜디오 촬영</h4><p>네 카테고리 오브제, 모델 클로즈업</p></div>
-      <div class="s key"><div class="d">12월 중순 (준공 후)</div><h4>Day 2 병원 촬영</h4><p>공간, 의료진, 퍼스널 인터뷰</p></div>
+      <div class="s key"><div class="d">12월 중순</div><h4>Day 2 병원 촬영</h4><p>공간, 의료진, 퍼스널 인터뷰</p></div>
     </div>
     <div class="tl">
-      <div class="s"><div class="d">12.08 – 12.19</div><h4>1차 편집 · 로고 모션</h4><p>메인 필름 가편집 시사, 범퍼·엔드 카드 제작</p></div>
+      <div class="s"><div class="d">12.08 – 12.19</div><h4>1차 편집 · 로고 모션</h4><p>메인 필름 가편집 시사, 범퍼 · 엔드 카드 제작</p></div>
       <div class="s"><div class="d">12.22 – 12.26</div><h4>2차 편집 · 색보정 · 사운드</h4><p>내레이션 녹음, 믹싱, 영문 자막</p></div>
-      <div class="s key"><div class="d">12월 말</div><h4>티저 공개 · 최종 납품</h4><p>컷다운·숏폼 순차 공개, 홈페이지 루프 적용</p></div>
-      <div class="s"><div class="d">2027.01</div><h4>개원 · 퍼스널 숏폼 공개</h4><p>원장별 콘텐츠, 인플루언서 콘텐츠와 연계</p></div>
+      <div class="s key"><div class="d">12월 말</div><h4>티저 공개 · 최종 납품</h4><p>컷다운 · 숏폼 순차 공개, 홈페이지 루프 적용</p></div>
+      <div class="s"><div class="d">2027. 01</div><h4>개원 · 퍼스널 숏폼 공개</h4><p>원장별 콘텐츠, 인플루언서 콘텐츠와 연계</p></div>
     </div>
   </div>
 </div></section>
 
 <!-- 09 -->
 <section id="s9"><div class="wrap">
-  <div class="eyebrow">09 · Compliance</div>
-  <h2>의료광고 · 브랜드 규정 유의 사항</h2>
+  <div class="eyebrow">09 · Standards</div>
+  <h2>운영 기준</h2>
+  <p class="lead">의료광고 기준과 브랜드 가이드를 지키며 제작 · 공개합니다.</p>
   <div class="warn">
-    <h3>영상 공개 전 반드시 검토할 항목</h3>
     <ol>
-      <li><b>진료 범위 확인:</b> 의료기관 종별에 따라 시행할 수 있는 의료행위의 범위와 각 시술(레이저 제모·문신제거 포함)의 적법성을 의료진·법률 자문으로 확인한 뒤, 확인된 항목만 영상에 표현합니다.</li>
-      <li><b>사전심의:</b> 온라인 매체 게재 시 의료광고 사전심의 대상인지 확인하고, 해당하면 심의를 받은 뒤 공개합니다(일정에 1–2주 여유 반영).</li>
-      <li><b>표현 기준:</b> 치료 효과 보장, 시술 전후 비교, 최고·유일 같은 최상급 표현, 다른 기관과의 비교 표현은 쓰지 않습니다. 가격 노출 시 정가·이벤트가 표기 기준을 따릅니다.</li>
-      <li><b>명칭 표기:</b> 엔드 카드에 시그니처 로고와 법정 명칭 <b>‘르니크한의원’</b>을 병기합니다(Lockup: Pretendard SemiBold, 자간 +0.3em, 로고 하단 0.5X). 그 밖의 자막·내레이션은 ‘르니크’로 통일하고, ‘르니크 피부과’ 등 종별을 오인할 표현은 쓰지 않습니다.</li>
-      <li><b>로고 사용:</b> 확정 벡터의 다섯 버전만 쓰고, 비율 변형·회전·세미콜론 임의 색·그림자·서체 대체를 하지 않습니다. 투톤은 화이트 바탕에서만, 반전 화이트는 에스프레소 바탕에서만 씁니다. 세미콜론을 단독 마크로 쓰지 않습니다.</li>
-      <li><b>출연자:</b> 모델 장면은 실제 환자·체험담으로 오인되지 않도록 연출하고, 필요하면 ‘연출된 장면’ 자막을 넣습니다. 초상권·출연 동의서를 받습니다.</li>
-      <li><b>인플루언서 연계:</b> 협찬·광고 여부를 명확히 표시하고, 실제로 경험하지 않은 시술이나 효과를 경험담처럼 표현하지 않습니다.</li>
+      <li><b>진료 범위:</b> 의료기관 종별에 따라 시행할 수 있는 의료행위와 각 시술의 적법성을 의료진 · 법률 자문으로 확인하고, 확인된 항목만 영상에 표현합니다.</li>
+      <li><b>사전심의:</b> 온라인 매체 게재 전 의료광고 사전심의 대상 여부를 확인하고, 해당하면 심의 후 공개합니다.</li>
+      <li><b>표현:</b> 치료 효과 보장, 시술 전후 비교, 최상급 표현, 다른 기관과의 비교 표현은 쓰지 않습니다.</li>
+      <li><b>명칭:</b> 엔드 카드에는 시그니처 로고와 법정 명칭 ‘르니크한의원’을 함께 표기하고, 자막 · 내레이션은 ‘르니크’로 통일합니다.</li>
+      <li><b>로고:</b> 지정된 컬러 버전의 원본 벡터만 사용하며, 비율 변형 · 회전 · 임의 색 · 그림자 효과 · 서체 대체를 하지 않습니다.</li>
+      <li><b>출연자:</b> 모델 장면이 실제 환자의 체험담으로 오인되지 않도록 연출하고, 초상권 · 출연 동의서를 받습니다.</li>
+      <li><b>인플루언서:</b> 협찬 · 광고 여부를 명확히 표시하고, 실제 경험하지 않은 시술이나 효과를 경험담처럼 표현하지 않습니다.</li>
     </ol>
   </div>
 </div></section>
 
 <!-- 10 -->
 <section id="s10"><div class="wrap">
-  <div class="eyebrow">10 · To Confirm</div>
-  <h2>병원 측 확인 요청 사항</h2>
+  <div class="eyebrow">10 · Discussion</div>
+  <h2>협의 사항</h2>
+  <p class="lead">원활한 진행을 위해 아래 사항을 함께 정하고자 합니다.</p>
   <ol class="check">
-    <li><b>준공 일정 및 병원 촬영 가능일</b><small>Day 2 병원 촬영 일정 확정용 · 가이드북 Ver 2.0 실사 사진 촬영과 일정 통합 가능 여부</small></li>
-    <li><b>원장님 영상 출연 범위</b><small>얼굴 노출 여부, 인터뷰 가능 시간, 퍼스널 분야(온다 / SMP·문신제거) 확정 시점</small></li>
-    <li><b>주소 확인</b><small>가이드북 v1.4 시안에 ‘서울 강남구 강남대로 502, 2층’으로 기재 — 초기 회의록(역삼역 인근)과 달라 최종 주소 확인 필요</small></li>
-    <li><b>PURETÉ 영상 표현 수위</b><small>제모·문신제거를 바디 피부 컷으로 표현해도 되는지, 남성 제모 컷 포함 여부</small></li>
-    <li><b>영상 촬영용 기기 확보 시점</b><small>디테일 컷 촬영이 가능한 기기와 입고 일정</small></li>
-    <li><b>외국인 대상 언어</b><small>영문 외에 중국어·일본어 자막이 필요한지</small></li>
-    <li><b>영상 제작 예산</b><small>월 마케팅 예산(1,000만 원)과 별도인지, 그 안에서 집행하는지</small></li>
-    <li><b>의료광고 심의 · 법률 검토 담당</b><small>병원 측 진행인지 대행사 진행인지</small></li>
+    <li><b>병원 촬영 일정</b><small>준공 일정에 맞춘 Day 2 촬영일</small></li>
+    <li><b>원장님 출연 범위</b><small>얼굴 노출 여부, 인터뷰 시간, 퍼스널 숏폼의 전문 분야</small></li>
+    <li><b>엔드 카드 · 개원 안내 정보</b><small>최종 주소와 개원일</small></li>
+    <li><b>PURETÉ 표현 범위</b><small>제모 · 문신제거를 바디 피부 장면으로 표현하는 수위, 남성 제모 장면 포함 여부</small></li>
+    <li><b>촬영용 기기</b><small>디테일 컷 촬영이 가능한 기기와 입고 시점</small></li>
+    <li><b>외국어 자막</b><small>영문 외 중국어 · 일본어 자막 필요 여부</small></li>
+    <li><b>제작 예산</b><small>월 마케팅 예산과의 관계(별도 · 포함)</small></li>
+    <li><b>의료광고 심의 · 법률 검토</b><small>진행 주체</small></li>
   </ol>
 </div></section>
 
-<footer>
-  <img src="assets/logo/renique_signature_espresso.svg" alt="RE;NIQUE CLINIC" width="1186" height="345">
-  르니크 강남 · Branding Film Planning · Brand Guideline v1.4 적용
-</footer>
+<div class="closing">
+  <img src="assets/logo/renique_signature_white.svg" alt="RE;NIQUE CLINIC" width="1186" height="345">
+  <h2>다시, 나다운 특별함으로.</h2>
+  <p>지점이 늘어도 흔들리지 않는 하나의 기준을, 가장 먼저 영상으로 보여 드리겠습니다.</p>
+</div>
+<footer>르니크 강남 · Branding Film Proposal · 2026. 11</footer>
 <script>
 document.querySelectorAll('.tbl').forEach(t=>{const h=[...t.querySelectorAll('thead th')].map(th=>th.textContent.trim());t.querySelectorAll('tbody tr').forEach(tr=>[...tr.children].forEach((td,i)=>td.setAttribute('data-label',h[i]||'')));});
 </script>

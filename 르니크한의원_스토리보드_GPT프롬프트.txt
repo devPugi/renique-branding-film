@@ -1,13 +1,13 @@
 [GLOBAL STYLE — apply to EVERY image below]
-You are generating storyboard frames for a luxury Korean skin beauty clinic brand film called RE;NIQUE (Brand Guideline v1.4). Generate the images below one by one, in order, as separate images. Keep the same visual style and the same female model (Korean woman, late 20s, natural minimal makeup) across all frames.
+You are generating storyboard frames for a luxury Korean skin beauty clinic brand film called RE;NIQUE. Generate the images below one by one, in order, as separate images. Keep the same visual style and the same female model (Korean woman, late 20s, natural minimal makeup) across all frames.
 Style: cinematic still frame, minimal, quiet, editorial mood. Soft natural light, soft side light, clean white highlights, warm deep espresso-brown shadows (#28211D), low saturation. Color palette: espresso #28211D, white #FFFFFF, warm light gray #F5F3F0, with signature orange #E86E26 only as a small accent where specified. AVOID navy, blue, green, pink, mint and heavy gold color casts. Subtle film grain, shallow depth of field, generous negative space, 35mm/85mm cinema lens look.
 Strict rules: NO text, NO letters, NO logos, NO watermarks, NO standalone semicolon shapes, NO medical devices, NO needles, NO redness or blemishes, NO before-and-after comparison.
 Frames marked 16:9 are horizontal; frames marked 9:16 are vertical.
 File names: save each main-film image as MAIN_CUT_XX_16x9.jpg (XX = cut number) in the "스토리보드 사진" folder.
 
-※ Already made and kept: CUT 02, 03, 04, 05, 06, 07, 08, 09, 11, 12, 13, 14 (renumbered for v1.4).
+※ Already made and kept: CUT 02, 03, 04, 05, 06, 07, 08, 09, 11, 12, 13, 14.
 ※ Not needed as images: CUT 01 (espresso + orange line motion graphic) and CUT 15 (orange end card) are built as graphics.
-※ STILL NEEDED: CUT 10 (PURETÉ) and the PURETÉ short-form frames. Regenerate others only if you want them closer to the v1.4 palette.
+※ STILL NEEDED: CUT 10 (PURETÉ) and the PURETÉ short-form frames. Regenerate others only if you want them closer to the brand palette.
 
 ===== A. MAIN FILM (16:9) =====
 
