@@ -1,69 +1,81 @@
 [GLOBAL STYLE — apply to EVERY image below]
-You are generating storyboard frames for a luxury Korean skin beauty clinic brand film called RE;NIQUE (Brand Guideline v1.1). Generate the images below one by one, in order, as separate images. Keep the same visual style and the same female model (Korean woman, late 20s, natural minimal makeup) across all frames.
-Style: cinematic still frame, minimal, quiet, editorial mood. Soft natural light (around 4000–4500K), soft side light, creamy highlights, cool deep ink-navy shadows (#14232B), low saturation. Color palette: cream #F5EBE0, sand #F0DBC8, peach #F3A066, deep ink navy #14232B, with signature orange #E86E26 only where specified. AVOID brown, green and gold color casts. Subtle film grain, shallow depth of field, generous negative space, 35mm/85mm cinema lens look.
-Strict rules: NO text, NO letters, NO logos, NO watermarks, NO medical devices, NO needles, NO redness or blemishes, NO before-and-after comparison.
+You are generating storyboard frames for a luxury Korean skin beauty clinic brand film called RE;NIQUE (Brand Guideline v1.4). Generate the images below one by one, in order, as separate images. Keep the same visual style and the same female model (Korean woman, late 20s, natural minimal makeup) across all frames.
+Style: cinematic still frame, minimal, quiet, editorial mood. Soft natural light, soft side light, clean white highlights, warm deep espresso-brown shadows (#28211D), low saturation. Color palette: espresso #28211D, white #FFFFFF, warm light gray #F5F3F0, with signature orange #E86E26 only as a small accent where specified. AVOID navy, blue, green, pink, mint and heavy gold color casts. Subtle film grain, shallow depth of field, generous negative space, 35mm/85mm cinema lens look.
+Strict rules: NO text, NO letters, NO logos, NO watermarks, NO standalone semicolon shapes, NO medical devices, NO needles, NO redness or blemishes, NO before-and-after comparison.
 Frames marked 16:9 are horizontal; frames marked 9:16 are vertical.
+File names: save each main-film image as MAIN_CUT_XX_16x9.jpg (XX = cut number) in the "스토리보드 사진" folder.
+
+※ Already made and kept: CUT 02, 03, 04, 05, 06, 07, 08, 09, 11, 12, 13, 14 (renumbered for v1.4).
+※ Not needed as images: CUT 01 (espresso + orange line motion graphic) and CUT 15 (orange end card) are built as graphics.
+※ STILL NEEDED: CUT 10 (PURETÉ) and the PURETÉ short-form frames. Regenerate others only if you want them closer to the v1.4 palette.
 
 ===== A. MAIN FILM (16:9) =====
 
-CUT 01 — 16:9
-Pure deep ink-navy background (#14232B). In the exact center, a single small semicolon-shaped object made of matte signature orange (#E86E26) ceramic, lit by a thin top spotlight, casting a faint soft shadow. Vast empty darkness, extremely minimal, mysterious and calm.
-
 CUT 02 — 16:9
-View through frosted textured glass: five blurred human silhouettes standing in a row, all looking alike, out of focus in muted grey-beige tones. The center figure, the Korean woman, is slightly sharper and is the only one touched by a soft peach light from the side. Rack-focus feeling, dreamy, contemplative.
+View through frosted textured glass: five blurred human silhouettes standing in a row, all looking alike, out of focus in muted warm grey tones. The center figure, the Korean woman, is slightly sharper and is the only one touched by a soft warm light from the side. Rack-focus feeling, dreamy, contemplative. Lower third calm for subtitles.
 
 CUT 03 — 16:9
-Extreme macro of a thin bare tree branch by a window at early morning; a tiny pale fresh bud is just opening at its tip. Soft warm sunlight through sheer linen curtains, cream background with creamy bokeh. Empty negative space on the left third. Delicate, hopeful, quiet.
+Extreme macro of a thin bare tree branch by a window at early morning; a tiny pale fresh bud is just opening at its tip. Soft sunlight through sheer white linen curtains, light warm-gray background with soft bokeh. Empty negative space on the left third. Delicate, hopeful, quiet.
 
 CUT 04 — 16:9
-Top-down close-up of smooth grey river pebbles scattered on cream linen. One single pebble is different: warm sand-stone color with natural layered veins, lit by a narrow beam of warm light while the others stay in gentle shade. Empty space on the right third. Minimal, tactile, serene.
+Top-down close-up of smooth grey river pebbles scattered on off-white linen. One single pebble is different: warm stone color with natural layered veins, lit by a narrow beam of light while the others stay in gentle shade. Empty space on the right third. Minimal, tactile, serene.
 
 CUT 05 — 16:9
-Deep ink-navy (#14232B) background with a very subtle gradient, a faint soft glow at the center like light gathering into one point, tiny floating dust particles catching warm light drifting toward the center. Empty, elegant background plate for a centered logo.
+Deep espresso-brown (#28211D) background with a very subtle gradient, a faint soft glow at the center like light gathering into one point, tiny floating dust particles drifting toward the center. Empty, elegant background plate for a centered white logo.
 
 CUT 06 — 16:9
-Close-up of cream silk fabric gently rippling in the air, soft folds catching warm backlight, light glowing through the thin fabric. Slow-motion feeling, weightless, pure. Upper area calm and empty.
+Close-up of white silk fabric gently rippling in the air, soft folds catching backlight, light glowing through the thin fabric. Slow-motion feeling, weightless, pure. Lower area calm for subtitles.
 
-CUT 07 — 16:9
-Split composition. Left half: macro of a cross-section of layered natural sedimentary stone, fine horizontal strata in sand, cream and warm gray, raking side light from the left. Right half: macro of healthy smooth human skin texture with natural pores, same warm raking light from the left, same horizontal flow, matched like a match cut. Clinical yet poetic.
+CUT 07 (LIGNE · 선명하게) — 16:9
+Side-profile silhouette of the Korean woman against a soft glowing backlight, face in shadow. A thin luminous rim of light traces the natural contour from forehead down to the jawline and neck. Elegant, sculptural; warm light-gray to espresso gradient background. Natural face shape, no exaggerated V-line.
 
-CUT 08 — 16:9
-Side-profile silhouette of the Korean woman against a warm glowing backlight, face in shadow. A thin luminous rim of soft peach light traces the natural contour from forehead down to the jawline and neck. Elegant, sculptural; soft cream-to-peach gradient background. Natural face shape.
+CUT 08 (VELOUTÉ · 균일하게) — 16:9
+Split composition. Left half: macro of a cross-section of evenly layered natural stone, fine horizontal strata in white, light gray and warm stone tones, raking side light from the left. Right half: macro of healthy, smooth, even human skin texture with natural pores, same raking light from the left, same horizontal flow, matched like a match cut. Clinical yet poetic.
 
-CUT 09 — 16:9
-Close-up of the Korean woman with eyes gently closed, face turned slightly, a soft warm light blooming across her cheek and spreading outward; skin clear, even and luminous but natural with real texture. Warm peach-to-sand gradient glow background. Calm morning-light feeling.
+CUT 09 (ÉCLAT · 화사하게) — 16:9
+Close-up of the Korean woman with eyes gently closed, face turned slightly, a soft light blooming across her cheek and spreading outward; skin clear, even and luminous but natural with real texture. Warm light-gray background with a faint orange glow. Calm morning-light feeling.
 
-CUT 10 — 16:9
-Wide interior of a minimal luxury clinic reception in Gangnam: cream plaster walls, a tall arched doorway leading to a softly lit corridor, pale travertine reception desk, sand-stone floor, natural daylight from a large window, one small signature-orange ceramic object as an accent. Quiet, airy, architectural, no people, no signage.
+CUT 10 (PURETÉ · 깨끗하게) — 16:9   ★ NEW, REQUIRED
+Close-up of a smooth, polished pale stone surface on an espresso-brown background. A thin layer of very fine light dust on the stone is being gently blown away by a soft breeze from left to right, revealing a perfectly clean, smooth surface underneath; the drifting particles catch the side light. Minimal, calm, "delicately taking away". Lower third calm for subtitles.
+
+CUT 10-B (PURETÉ alt, skin) — 16:9   (optional, for the match cut)
+Close-up of the smooth, clean shoulder and upper arm line of the Korean woman, lit by the same soft side light from the left as CUT 10; flawless but natural skin texture, white towel softly draped below, espresso-brown background. Elegant, clean, not sensual.
 
 CUT 11 — 16:9
-Close-up at a travertine consultation table: a doctor's hands in a clean cream coat sleeve gently turning a blank sheet of paper toward a client; the client's hands rest calmly opposite. Faces not visible. Warm window light, a ceramic tea cup in soft focus. Trustworthy, attentive.
+Wide interior of a minimal luxury clinic waiting lounge in Gangnam: warm white plaster walls, deep espresso wood and stone accents, a staircase waiting area in the background, natural daylight, one small signature-orange object as an accent. Quiet, airy, architectural, no people, no signage.
 
 CUT 12 — 16:9
-Two Korean doctors, a man and a woman in their late 30s to 40s, standing side by side in front of cream consultation room doors, wearing refined cream doctor coats, calm confident gentle expressions, looking at camera. Soft warm natural light, clean minimal background. Editorial portrait.
+Close-up at a stone consultation table: a doctor's hands in a clean white coat sleeve gently turning a blank sheet of paper toward a client; the client's hands rest calmly opposite. Faces not visible. A door to a private treatment room softly out of focus behind. Window light, ceramic cup in soft focus. Trustworthy, attentive.
 
 CUT 13 — 16:9
-Medium close-up of the Korean woman in an cream knit top, looking directly into the camera with a faint quiet smile, bathed in warm soft window light, soft cream glowing background. Confident, natural. Lower third empty.
+Two Korean doctors, a man and a woman in their late 30s to 40s, standing side by side in front of a director's consultation room with espresso wood doors, wearing refined white doctor coats with no name badges or text, calm confident gentle expressions, looking at camera. Soft natural light. Editorial portrait.
 
 CUT 14 — 16:9
-Solid flat signature orange (#E86E26) field filling the entire frame, perfectly even, no texture, no gradient, no vignette. Completely empty background for a centered white logo (end card).
+Medium close-up of the Korean woman in an off-white knit top, looking directly into the camera with a faint quiet smile, soft window light, warm light-gray background fading to espresso at the edges. Confident, natural. Lower third empty.
 
-===== C. SHORT-FORM (9:16) =====
+===== C. SHORT-FORM (9:16) — 4 categories =====
+(Copy cards and end cards are graphics; only the two image frames per category are needed.)
 
-REBUILD 01 — 9:16
-Vertical close-up of layered natural sedimentary stone strata filling the whole frame, horizontal bands of sand, beige and taupe, warm raking light sweeping from the top. Tactile, minimal.
+LIGNE 01 — 9:16
+Vertical shot of white silk draped on a surface, a single elegant S-curved shadow flowing diagonally from bottom-left to top-right, soft side light, espresso background edges. Minimal, graceful.
 
-REBUILD 02 — 9:16
-Vertical extreme macro of healthy smooth human skin texture, fine natural pores, same warm raking light from the top, soft focus falloff at edges. Clean, honest, no makeup.
+LIGNE 02 — 9:16
+Vertical side-profile silhouette of the Korean woman, backlit, a thin rim light flowing along the jawline down the neck, warm gray-to-espresso background. Sculptural, elegant.
 
-REFINE 01 — 9:16
-Vertical shot of cream silk draped on a surface, a single elegant S-curved shadow flowing diagonally from bottom-left to top-right, warm side light. Minimal, graceful.
+VELOUTÉ 01 — 9:16
+Vertical close-up of evenly layered natural stone strata filling the whole frame, horizontal bands of white, light gray and warm stone, raking light sweeping from the top. Tactile, minimal.
 
-REFINE 02 — 9:16
-Vertical side-profile silhouette of the Korean woman, backlit, a thin peach rim light flowing along the jawline down the neck, warm peach-cream background. Sculptural, elegant.
+VELOUTÉ 02 — 9:16
+Vertical extreme macro of healthy, smooth, even human skin texture, fine natural pores, same raking light from the top, soft focus falloff at edges. Clean, honest, no makeup.
 
-REVIVE 01 — 9:16
-Vertical close-up of a clear glass of water on cream linen, warm sunlight refracting through it and blooming into a soft glowing orb of peach light on the surface. Dreamy, luminous.
+ÉCLAT 01 — 9:16
+Vertical close-up of a clear glass of water on white linen against an espresso background, sunlight refracting through it and blooming into a soft glowing orb of warm light on the surface with a faint orange tint. Dreamy, luminous.
 
-REVIVE 02 — 9:16
-Vertical close-up of the Korean woman's face, eyes closed, warm soft light spreading across her cheek, clear even luminous skin with natural texture, peach-sand gradient background. Serene.
+ÉCLAT 02 — 9:16
+Vertical close-up of the Korean woman's face, eyes closed, soft light spreading across her cheek, clear even luminous skin with natural texture, warm gray background. Serene.
+
+PURETÉ 01 — 9:16   ★ NEW
+Vertical close-up of a smooth pale stone on an espresso-brown background, fine light dust being blown off its surface by a gentle breeze, particles drifting upward and catching the light, revealing a clean polished surface. Calm, minimal.
+
+PURETÉ 02 — 9:16   ★ NEW
+Vertical close-up of a smooth, clean shoulder-to-arm line of the Korean woman, soft side light, white towel softly draped, espresso-brown background. Elegant, clean, not sensual.
