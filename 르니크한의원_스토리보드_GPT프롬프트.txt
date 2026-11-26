@@ -7,7 +7,7 @@ File names: save each main-film image as MAIN_CUT_XX_16x9.jpg (XX = cut number) 
 
 ※ Already made and kept: CUT 02, 03, 04, 05, 06, 07, 08, 09, 11, 12, 13, 14.
 ※ Not needed as images: CUT 01 (espresso + orange line motion graphic) and CUT 15 (orange end card) are built as graphics.
-※ STILL NEEDED: CUT 10 (PURETÉ) and the PURETÉ short-form frames. Regenerate others only if you want them closer to the brand palette.
+※ STILL NEEDED: CUT 10 (PURETÉ), the PURETÉ short-form frames, and CUT 13 again (the current image shows a man and a woman; both directors are men). Regenerate others only if you want them closer to the brand palette.
 
 ===== A. MAIN FILM (16:9) =====
 
@@ -45,10 +45,10 @@ CUT 11 — 16:9
 Wide interior of a minimal luxury clinic waiting lounge in Gangnam: warm white plaster walls, deep espresso wood and stone accents, a staircase waiting area in the background, natural daylight, one small signature-orange object as an accent. Quiet, airy, architectural, no people, no signage.
 
 CUT 12 — 16:9
-Close-up at a stone consultation table: a doctor's hands in a clean white coat sleeve gently turning a blank sheet of paper toward a client; the client's hands rest calmly opposite. Faces not visible. A door to a private treatment room softly out of focus behind. Window light, ceramic cup in soft focus. Trustworthy, attentive.
+Close-up at a stone consultation table: a male Korean doctor's hands in a clean white coat sleeve gently turning a blank sheet of paper toward a client; the client's hands rest calmly opposite. Faces not visible. A door to a private treatment room softly out of focus behind. Window light, ceramic cup in soft focus. Trustworthy, attentive.
 
 CUT 13 — 16:9
-Two Korean doctors, a man and a woman in their late 30s to 40s, standing side by side in front of a director's consultation room with espresso wood doors, wearing refined white doctor coats with no name badges or text, calm confident gentle expressions, looking at camera. Soft natural light. Editorial portrait.
+Two Korean male doctors (both co-directors) in their late 30s to 40s, standing side by side in front of a consultation room with espresso wood doors, wearing refined white doctor coats with no name badges or text, calm confident gentle expressions, looking at camera. Soft natural light. Editorial portrait.
 
 CUT 14 — 16:9
 Medium close-up of the Korean woman in an off-white knit top, looking directly into the camera with a faint quiet smile, soft window light, warm light-gray background fading to espresso at the edges. Confident, natural. Lower third empty.
