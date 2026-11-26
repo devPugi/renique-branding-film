@@ -7,7 +7,7 @@ File names: save each main-film image as MAIN_CUT_XX_16x9.jpg (XX = cut number) 
 
 ※ Already made and kept: CUT 02, 03, 04, 05, 06, 07, 08, 09, 11, 12, 13, 14.
 ※ Not needed as images: CUT 01 (espresso + orange line motion graphic) and CUT 15 (orange end card) are built as graphics.
-※ STILL NEEDED: CUT 10 (PURETÉ), the PURETÉ short-form frames. Regenerate others only if you want them closer to the brand palette.
+※ STILL NEEDED: the PURETÉ short-form frames (PURETÉ 01 · 02). Regenerate others only if you want them closer to the brand palette.
 
 ===== A. MAIN FILM (16:9) =====
 
